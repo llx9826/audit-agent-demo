@@ -1,0 +1,44 @@
+{
+  "case_id": "CASE-ZD-042",
+  "product": "宅抵贷",
+  "channel": "DIRECT",
+  "case_date": "2026-08-15",
+  "persons": [
+    {"person_id": "P01", "name": "张伟", "roles": ["BORROWER"], "confirmed": true, "source": "CASE_INPUT"},
+    {"person_id": "P02", "name": "林芳", "roles": ["MORTGAGOR", "SPOUSE"], "confirmed": true, "source": "CASE_INPUT"},
+    {"person_id": "P03", "name": "明达商贸", "roles": ["BUSINESS_OPERATOR"], "confirmed": true, "source": "CASE_INPUT"}
+  ],
+  "material_manifest": {
+    "image_count": 216,
+    "bundle_count": 36,
+    "domain_count": 6,
+    "domains": [
+      {"name": "身份与主体证明", "count": 18},
+      {"name": "婚姻与家庭关系", "count": 12},
+      {"name": "房产权属与抵押相关材料", "count": 46},
+      {"name": "经营主体与经营材料", "count": 58},
+      {"name": "合同、申请与授权文件", "count": 42},
+      {"name": "声明、附件与其他材料", "count": 40}
+    ]
+  },
+  "page_domains": [
+    {"name": "身份与主体证明", "count": 18},
+    {"name": "婚姻与家庭关系", "count": 12},
+    {"name": "房产权属与抵押相关材料", "count": 46},
+    {"name": "经营主体与经营材料", "count": 58},
+    {"name": "合同、申请与授权文件", "count": 42},
+    {"name": "声明、附件与其他材料", "count": 40}
+  ],
+  "featured_pages": [
+    {"page_id": "PAGE-001", "material_type": "identity_document", "owner_person_id": "P01", "status": "VERIFIED", "confidence": 0.99, "extracted_fields": {"side": "FRONT", "person_id": "P01", "person_name": "张伟", "identity_hash": "IDHASH-P01", "role_signals": ["BORROWER"]}, "evidence_refs": ["EV-PAGE-001"]},
+    {"page_id": "PAGE-002", "material_type": "identity_document", "owner_person_id": "P01", "status": "VERIFIED", "confidence": 0.99, "extracted_fields": {"side": "BACK"}, "evidence_refs": ["EV-PAGE-002"]},
+    {"page_id": "PAGE-011", "material_type": "identity_document", "owner_person_id": "P02", "status": "LOW_CONFIDENCE", "confidence": 0.61, "extracted_fields": {"side": "FRONT", "person_id": "P02", "person_name": "林芳", "identity_hash": "IDHASH-P02", "role_signals": ["MORTGAGOR", "SPOUSE"], "recovery_values": ["P02", "P02"]}, "evidence_refs": ["EV-PAGE-011"]},
+    {"page_id": "PAGE-012", "material_type": "identity_document", "owner_person_id": "P02", "status": "VERIFIED", "confidence": 0.98, "extracted_fields": {"side": "BACK", "person_id": "P02", "person_name": "林芳", "identity_hash": "IDHASH-P02", "role_signals": ["MORTGAGOR", "SPOUSE"]}, "evidence_refs": ["EV-PAGE-012"]},
+    {"page_id": "PAGE-021", "material_type": "marriage_certificate", "owner_person_id": null, "status": "OWNER_AMBIGUOUS", "confidence": 0.72, "extracted_fields": {"owner_candidates": ["P01", "P02"], "recovery_values": ["P02", "P02"]}, "evidence_refs": ["EV-PAGE-021"]},
+    {"page_id": "PAGE-031", "material_type": "property_certificate", "owner_person_id": "P02", "status": "VERIFIED", "confidence": 0.99, "extracted_fields": {"sheet": 1}, "evidence_refs": ["EV-PAGE-031"]},
+    {"page_id": "PAGE-032", "material_type": "property_certificate", "owner_person_id": "P02", "status": "VERIFIED", "confidence": 0.99, "extracted_fields": {"sheet": 2}, "evidence_refs": ["EV-PAGE-032"]},
+    {"page_id": "PAGE-033", "material_type": "property_certificate", "owner_person_id": "P02", "status": "VERIFIED", "confidence": 0.99, "extracted_fields": {"sheet": 3}, "evidence_refs": ["EV-PAGE-033"]},
+    {"page_id": "PAGE-034", "material_type": "property_certificate", "owner_person_id": "P02", "status": "VERIFIED", "confidence": 0.99, "extracted_fields": {"sheet": 4}, "evidence_refs": ["EV-PAGE-034"]},
+    {"page_id": "PAGE-091", "material_type": "business_license", "owner_person_id": "P03", "status": "VERIFIED", "confidence": 0.99, "extracted_fields": {"copy": "MAIN", "person_id": "P03", "person_name": "明达商贸", "identity_hash": "ORG-HASH-P03", "role_signals": ["BUSINESS_OPERATOR"]}, "evidence_refs": ["EV-PAGE-091"]}
+  ]
+}

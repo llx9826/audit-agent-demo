@@ -1,0 +1,10 @@
+{
+  "default": "material_completeness.json",
+  "material_completeness": "material_completeness.json",
+  "architecture_demo": "material_completeness.json",
+  "normal": "material_completeness.json",
+  "ocr_conflict": "material_completeness.json",
+  "supplement_replan": "material_completeness.json",
+  "policy_version": "material_completeness.json",
+  "loop_guard": "material_completeness.json"
+}

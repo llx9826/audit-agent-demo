@@ -1,0 +1,34 @@
+{
+  "built_at": "2026-08-16T18:21:15.778452+00:00",
+  "child_chunk_count": 187,
+  "chunk_config": {
+    "chunking_version": "structure-semantic-context-v3",
+    "max_tokens": 384,
+    "overlap_tokens": 48
+  },
+  "contextualization_prompt": {
+    "prompt_id": "rag.offline.contextual-retrieval",
+    "sha256": "ceccfbb66a1f8d8f0d37ef61c6b2eb29d88a09c4d95547a46ffec1837724b310",
+    "version": "1.0.0"
+  },
+  "contextualization_workers": 3,
+  "contextualized_chunk_count": 187,
+  "contextualizer": "model-gateway-contextual-retrieval-v1",
+  "offline_pipeline": [
+    "SOURCE_REGISTRY",
+    "ROBOTS_AWARE_FETCH",
+    "TEXT_LAYER_EXTRACTION",
+    "FORMAT_NORMALIZATION_AND_CONTENT_SCOPING",
+    "PARENT_SECTION_SPLIT",
+    "SEMANTIC_CLAUSE_AND_SENTENCE_GROUPING",
+    "OVERSIZED_UNIT_TOKEN_FALLBACK_WITH_OVERLAP",
+    "CONTEXTUAL_RETRIEVAL_TEXT_AND_ALIAS_BUILD",
+    "DENSE_AND_BM25_INDEX_INPUT"
+  ],
+  "output": "/Users/lilinxuan/Documents/ChatGPT/银行进件审核展示/audit-agent-demo/backend/app/rag/offline/data/source_chunks.jsonl",
+  "parent_count": 19,
+  "semantic_unit_count": 187,
+  "source_count": 12,
+  "token_fallback_chunk_count": 0,
+  "tokenizer": "BAAI/bge-m3"
+}

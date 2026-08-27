@@ -1,0 +1,1238 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>中国建设银行-广西省分行</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<script type="text/javascript" src="/cn/v3/js/jquery_pc.js"></script>
+<script src="/cn/v3/js/page_mapping.js"></script>
+<script src="/cn/v3/js/check_url_params.js"></script>
+<script src="/cn/v3/js/center.js"></script>
+<script src="/cn/v3/js/switch-host.js"></script>
+<script src="/cn/v3/js/web_collect.js"></script>
+<link href="/cn/v3/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/cn/v3/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/cn/v3/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/cn/v3/css/index.css" rel="stylesheet" type="text/css" />
+<link href="/cn/v3/css/vcc-css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+if(!window.console){
+	var method;
+	var noop=function(){};
+	var methods=['assert','clear','count','debug','dir','dirxml','error','exception','group','groupCollapsed','groupEnd','info','log','markTimeline','profile','profileEnd','table','time','timeEnd','timeline','timelineEnd','timeStamp','trace','warn'];
+	var length=methods.length;
+	var console={};
+	while(length--){
+		method=methods[length];
+		console[method]=noop;
+	}
+}
+
+//20210702
+(function () {
+	var whiteList = [];
+    var blackList = [];
+
+	try {
+		var top_host = top.location.host;
+		if(!/ccb.com/.test(top_host)){
+			var black = blackList.join(",");
+			var flag_b = new RegExp("(^|,)" + top_host + "(,|$)").test(black);
+
+			if(flag_b){
+				top.location = self.location;
+			}
+
+			var white = whiteList.join(",");
+			var flag_w = new RegExp("(^|,)" + top_host + "(,|$)").test(white);
+
+			if(!flag_w){
+
+			}
+		}
+	} catch (error) {
+		
+	}
+})()
+</script>
+<script type="text/javascript" src="/cn/v3/js/jquery.Xslider.js"></script>
+<script type="text/javascript" src="/cn/v3/js/jquery.scroll.js"></script>
+<script type="text/javascript" src="/cn/v3/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/cn/v3/js/main.js"></script>
+<script type="text/javascript" src="/cn/v3/js/koala.min.1.5.js"></script>
+
+<script type="text/javascript" src="/cn/v3/js/city_changer.js"></script>
+<script type="text/javascript" src="/cn/v3/js/comm.js"></script>
+<script type="text/javascript" src="/cn/v3/js/adv.js"></script>
+<script type="text/javascript" src="/cn/v3/js/header_box.js"></script>
+<script type="text/javascript" src="/cn/v3/js/switch.js"></script>
+<script src="/cn/js/dataacquisition.header.ccb.js"></script>
+<script src="/cn/bfree/barrier-free.js"></script>
+<link href="/cn/branch/v3/css/branch.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/cn/branch/v3/js/index_scroll.js"></script>
+<script type="text/javascript" src="/cn/branch/v3/js/adv.js"></script>
+<script type="text/javascript">
+$(function(){
+	var topNum = 0;
+	$(".header_top_box .header_top_main .header_top_left li").each(function(i){
+		if(topNum == i){
+			$(this).addClass("se");	
+		}else{
+			$(this).removeClass("se");	
+		}																		
+	}); 
+	//$(".header_top_box .header_top_main .header_top_left li").eq(topNum).addClass("se");	   
+}) 
+</script>
+<!-- 以下一个css和5个js都是和detail_right.html配套的 -->
+<link href="/cn/v3/css/jquery.ui.theme.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/cn/v3/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/cn/v3/js/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="/cn/v3/js/jquery.ui.slider.js"></script>
+<script type="text/javascript" src="/cn/v3/js/fontsize_change.js"></script>
+<script type="text/javascript" src="/cn/v3/js/share_list.js"></script>
+</head>
+<body>
+
+<div class="header_top_box">
+  <div class="header_top_main">
+    <div class="header_top_left"> 
+      <ul>
+        <li class="se"><a href="http://www.ccb.com/cn/home/indexv3.html">个人客户</a></li>
+        <li><a href="http://privatebank.ccb.com">私人银行</a></li>
+        <!-- privatebank.ccb.com -->
+        <li><a href="http://company.ccb.com/cn/home/company_indexv3.html">公司机构</a></li>
+        <li><a href="http://scompany.ccb.com/cn/home/s_company_indexv3.html">小微企业</a></li>
+
+      </ul>
+    </div>
+    <div class="header_top_right">
+      <ul> 
+        <li id="kfhover" class="se">
+        	<a href="#" class="header_top_right_a" id="kefu"><img src="http://image3.ccb.com/cn/home/v3/images/zx_icon.png">客户服务</a>        
+		<!--在线客服业务维护部分-->		
+		
+    
+    
+			    
+			<script>
+			    $(function(){
+
+				  $('#kfhover').click(function () {
+			               $('.kfhover').show();
+						   $(this).parent().addClass('se').siblings().removeClass('se');
+			      });
+				  
+				  $('.btnkf').click(function (event) {
+						   $(this).parents().removeClass('se'); 
+			               $('.kfhover').hide();
+						   event.stopPropagation();
+						   
+			      }); 
+	
+				  
+				});
+				function openWinPop(url,name){var nWinLeft = (screen.width-950)/2;var nWinTop = (screen.height-620)/2;var win_style="menubar=no,toolbar=no,location=no,directories=no,status=yes,resizable=yes,scrollbars=no,width=940,height=603,top="+nWinTop+",left="+nWinLeft;window.open(url,name,win_style);}
+			</script>
+			<div class="kfhover" style="display: none;">
+				<div class="kfpath">
+					
+			<div class="kf_fl">
+               <a href="http://www.ccb.com/cn/home/customer_service/customer_service.html" >客户服务专区 &gt;</a>
+               <span class="kf_ad"><img src="http://image1.ccb.com/cn/v3/upload/20180124_1516762640/20180128023225580501.jpg"><div class="serviceAndcomplain">客服与投诉热线：95533</div></span>
+            </div>
+		 
+		
+			<div class="kf_fr">
+               <div class="top_line"></div>
+               <div class="kf_fr_top fr"> <a href="#" class="btnkf" ><img src="http://image3.ccb.com/cn/home/v3/images/shutdown.png"></a> </div>
+               <div class="kf_fr_middle">
+                   
+        
+        			<div class="kf_list">
+        	              <div class="kf_tit"><i class="i01"><img src="/cn/v3/upload/20180124_1516762640/20180128023248121792.png"></i>自助服务</div>
+            <a href="http://www.ccb.com/cn/home/customer_service/customer_service.html#tw" class="kf_item" >快捷提问</a><a href="javascript:void 0" onclick="window.open('http://echat.ccb.com/rolsvc/vservice.html?userType=17&type=2','新窗口','_blank')" class="kf_item" >我要留言</a><a href="http://www.ccb.com/cn/home/customer_service/customer_service.html#ywzy" class="kf_item" >建行主播   </a><a href="http://ebank.ccb.com/cn/ebank/personal/downloadcenter/201306071370593615.html" class="kf_item" >下载中心</a>
+					</div>     	    
+			
+        			<div class="kf_list">
+        	              <div class="kf_tit"><i class="i01"><img src="/cn/v3/upload/20180124_1516762640/20180128023257382868.png"></i>建行客服</div>
+            <a href="javascript:void 0" onclick="window.open('http://echat.ccb.com/rolsvc/vservice.html?userType=17','新窗口','_blank')" class="kf_item" >个人业务</a><a href="javascript:void 0" onclick="window.open('http://echat.ccb.com/rolsvc/vservice.html?userType=20','新窗口','_blank')" class="kf_item" >公司业务</a><a href="javascript:void 0" onclick="window.open('https://buy.shanrongmall.com/member/pcchatroom.jhtml','新窗口','_blank')" class="kf_item" >善融商务</a>
+					</div>     	    
+			
+        			<div class="kf_list">
+        	              <div class="kf_tit"><i class="i01"><img src="/cn/v3/upload/20180124_1516762640/20180128023306871123.png"></i>联系我们</div>
+            <a href="http://www.ccb.com/cn/home/customer_service/customer_service.html#lxwm" class="kf_item" >微信客服</a><a href="http://www.ccb.com/cn/home/customer_service/customer_service.html#lxwm" class="kf_item" >联系电话</a><a href="http://www.ccb.com/cn/home/customer_service/customer_service.html#lxwm" class="kf_item" >电子邮箱</a><a href="http://www.ccb.com/cn/home/customer_service/customer_service.html#lxwm" class="kf_item" > 邮寄地址</a><a href="http://www.ccb.com/cn/html1/office/grb/22/khtscllc.pdf" class="kf_item" >投诉渠道及处理流程</a>
+					</div>     	    
+			 
+                   
+               </div>
+		                   
+		    </div>
+
+		   
+				</div>
+			</div>
+			
+		
+		
+
+        </li>
+        <li class="padding_13 header_top_right_a">|</li>
+        <li><a id="jhjt" href="#" class="header_top_right_a">建行集团</a>
+         <!--建行集团业务维护部分-->				
+		<link rel="stylesheet" type="text/css" href="/chn/template/page/top_group/skin.css?timestamp=1774109066372" />  
+<b></b> 
+<style>
+  a{text-decoration: none;}
+.fR{float: right;}
+.jhjt{position:absolute;height:550px; left:0%;width:100%;background-color:#86b9e6;z-index:1004;overflow:auto;}
+.zz_top_lii{float: left;}
+.zhezhao{width:960px;margin:0 auto;padding-top:9px;}
+.showshow .showj .in_s a{color:#0066b3;}
+.showshow .showj .in_s a:hover{color:#fff;}
+.zz_top1{height:42px;margin-top:20px;padding-left:100px;margin-left:320px;border-bottom:2px #b6d5f0 solid;position:relative;}
+.zz_top1 .zz_top_left ul li.hover{background:url(//image3.ccb.cn/cn/v3/images/hjjbg.jpg) repeat-x left bottom;color:#fff;z-index:999;}
+.zz_top_left ul li{display:block;padding:0 20px;height:45px;line-height:45px;font-weight:normal;cursor:pointer;color:#0066b3;font-size:18px;}
+.zz_top_right1{cursor:pointer;position:absolute;right:0px;top:-9px;}
+.in_s{position:absolute;top:-50px;left:-3px;font-size:18px;}
+.showj_info{width:270px;margin:0 auto;}
+.showj_r{width:680px;float:right;margin-top:10px; display:none; position: relative;}
+.showj_r .f_blue{color:#0066b3;}
+.list_one1{width:320px;}
+.list_one1 ul li{width:300px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.list_li{padding-left:15px;font-size:14px;color:#0066b3;cursor:pointer;line-height:40px;}
+.showj_r .fl{ padding-left:20px;}
+.showj_r .top_map_bg{position: absolute; top:0;left:0;}
+.showj_r #top_map_main{ position: relative; z-index: 100;}
+.world_map{ margin-top:20px; position:relative;}
+.area_city{ position:absolute; width:191px; display:none;}
+.area_city_up{ width:191px;height:12px; background:url(//image1.ccb.cn/cn/home/v3/images/area_city_top.png) top no-repeat;}
+.area_city_bottom{ width:191px;height:6px; background:url(//image1.ccb.cn/cn/home/v3/images/area_city_bottom.png) top no-repeat;}
+.area_city ul{margin:0;padding:0; background:#dbeaf8; border-left:1px solid #0066b3; border-right:1px solid #0066b3;}
+.area_city ul li{ float:none;line-height:20px; font-size:12px;margin-left:8px}
+.area_city ul li a{ color:#0066b3;}
+.area_city ul li a:hover{ color:#0066b3;}
+.showj_info ul li.showj_tit a:hover,.showj_info ul li.showj_li a:hover{color:#1dd9e2;}
+.showj_info ul li.showj_tit{font-size:18px;color:#0066b3;line-height:53px;}
+.showj_info ul li{display:block;width:252px;}
+.showj_info ul li.showj_li{font-size:14px;color:#0066b3;line-height:24px;}
+.showj_in{background:url(/uiFramework/commonResource/zip/cn/cn/v3/images/showj_in.png) no-repeat;width:252px;height:442px; float:left;}
+.showj_in img{ margin:5px 0 10px 5px;}
+.showj{width:960px;height:450px;position:relative;margin:5px auto;}
+.showj_info ul li.showj_li a{color:#0066b3;}
+.showj_info ul li.showj_tit a{color:#0066b3;}
+#top_group_img{height:180px}
+</style> 
+<div class="jhjt"> 
+ <div class="zhezhao"> 
+  <div class="zz_top1"> 
+   <div class="zz_top_left fl"> 
+    <ul> 
+     <li class="zz_top_lii hover">境外分支机构</li> 
+     <li class="zz_top_lii">境内附属公司</li> 
+     <div class="clear"></div> 
+    </ul> 
+   </div> 
+   <div class="zz_top_right1 fr"> 
+    <a href=" " id="button2" class="but2"><img src="//image3.ccb.cn/cn/home/v3/images/shutdown.png" /></a> 
+   </div> 
+   <div class="clear"></div> 
+  </div> 
+  <div class="jhjt_tab_main"> 
+   <div class="showshow"> 
+    <div class="showj"> 
+     <div class="in_s"> 
+      <a href="//group.ccb.cn" target="_blank">进入建行集团网站 &gt;</a> 
+     </div> 
+     <div class="showj_in"> 
+      <div id="top_group_img" runat="server" name="头部建行集团左边图片" class=" column"> 
+       <div class="portlet" id="b05ecd5463b341d497271db1b3937d93" pagemoduleid="95d7ba26626246c190a30cd394fbb9c4"> 
+        <div align="left" class="eps-portlet-header"> 
+         <div id="submenub05ecd5463b341d497271db1b3937d93" class="eps-shadow eps-dn"> 
+          <ul class="float_list_ul"> 
+          </ul> 
+         </div> 
+        </div> 
+        <div> 
+         <img id="jiantuan_title_img" src="/chn/imageDir/2020/04/2020042316183096393.jpg" /> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="showj_info"> 
+       <ul> 
+        <li class="showj_tit"><a href="//group.ccb.cn/chn/ccbtoday/indexv3.shtml" target="_blank">今日建行 &gt;</a></li> 
+        <li id="ccbtoday_main" runat="server" name="今日建行" class=" column"> 
+         <div class="portlet" id="064df84f37d440eeb30e137663fa8c66" pagemoduleid="b221a100647941a0975065f49fb7b8c5"> 
+          <div align="left" class="eps-portlet-header"> 
+           <div id="submenu064df84f37d440eeb30e137663fa8c66" class="eps-shadow eps-dn"> 
+            <ul class="float_list_ul"> 
+            </ul> 
+           </div> 
+          </div> 
+          <div> 
+           <ol opentype="page"> 
+            <li class="showj_li"><a href="/chn/2026-06/08/article_2026060809595257163.shtml" target="_blank">• 锚定“十五五”规划蓝图，建设...</a></li> 
+            <li class="showj_li"><a href="/chn/2026-06/08/article_2026060809591365984.shtml" target="_blank">• 从23人“帐篷银行”出发 见证7...</a></li> 
+           </ol> 
+          </div> 
+         </div> </li> 
+        <li class="showj_tit"><a href="//group.ccb.cn/chn/investor/indexv3.shtml" target="_blank">投资者关系 &gt;</a></li> 
+        <li id="investor_main" runat="server" name="投资者关系" class=" column"> 
+         <div class="portlet" id="4d4eb2bbebe64284af555c68d692d2a6" pagemoduleid="567c612f569f414b99aaa20021a31979"> 
+          <div align="left" class="eps-portlet-header"> 
+           <div id="submenu4d4eb2bbebe64284af555c68d692d2a6" class="eps-shadow eps-dn"> 
+            <ul class="float_list_ul"> 
+            </ul> 
+           </div> 
+          </div> 
+          <div> 
+           <ol opentype="page"> 
+            <li class="showj_li"><a href="/chn/2026-07/13/article_2026071318223893622.shtml" target="_blank">• 股票发行人现金股息（可选择货...</a></li> 
+            <li class="showj_li"><a href="/chn/2026-07/13/article_2026071317241238684.shtml" target="_blank">• 股东通知信函及回条</a></li> 
+           </ol> 
+          </div> 
+         </div> </li> 
+        <li class="showj_tit"><a href="//job.ccb.cn" target="_blank">诚聘英才 &gt;</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div class="showj_r" style="display:block;"> 
+      <!-- <img src="//image3.ccb.cn/cn/home/include/20151206_1449369972/jt.jpg" class="top_map_bg"> --> 
+      <!-- <img src="//image1.ccb.cn/cn/home/v3/images/indexMapImage2023-2.png" class="top_map_bg">--> 
+      <div id="top_map_main" runat="server" name="境外分支机构" class=" column"> 
+       <div class="portlet" id="9372ed31a2884a34913adce51bc30996" pagemoduleid="ddd489d85d824054a054389404b111d2"> 
+        <div align="left" class="eps-portlet-header"> 
+         <div id="submenu9372ed31a2884a34913adce51bc30996" class="eps-shadow eps-dn"> 
+          <ul class="float_list_ul"> 
+          </ul> 
+         </div> 
+        </div> 
+        <div> 
+         <div style="margin-left:20px" opentype="more"> 
+          <dl class="jingwai_list" style="display:none"> 
+           <li class="jingwai_item list_li"><a href="https://nz.ccb.com/lng/newzealand/en/index.shtml" onclick="recordLinkArticleHits('75820d8450d34da7be97853def29e9e2','2926e5440f3a412b9961342c3ad681ef','新西兰分行',this)" target="_blank" title="新西兰分行" istitle="true">新西兰分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://hk.ccb.com/lng/hongkong/old/cn/index.shtml" onclick="recordLinkArticleHits('040a78658df84d088b1db2a3f60a492c','2926e5440f3a412b9961342c3ad681ef','香港分行',this)" target="_blank" title="香港分行" istitle="true">香港分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://sg.ccb.com/lng/singapore/old/cn/index.shtml" onclick="recordLinkArticleHits('697f0e7dc4c445b5b4eed11c2a7871bd','2926e5440f3a412b9961342c3ad681ef','新加坡分行',this)" target="_blank" title="新加坡分行" istitle="true">新加坡分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://de.ccb.com/lng/frankfurt/old/cn/index.shtml" onclick="recordLinkArticleHits('f07eec1f6818427cb2adb7374b977771','2926e5440f3a412b9961342c3ad681ef','法兰克福分行',this)" target="_blank" title="法兰克福分行" istitle="true">法兰克福分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://za.ccb.com/lng/johannesburg/cn/index.shtml" onclick="recordLinkArticleHits('055108edc04348fb930b33ee0876c252','2926e5440f3a412b9961342c3ad681ef','约堡分行',this)" target="_blank" title="约堡分行" istitle="true">约堡分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://jp.ccb.com/tokyo/lng/indexv3.html" onclick="recordLinkArticleHits('5a7480dfaa0346feb355d5a49f5d4bd8','2926e5440f3a412b9961342c3ad681ef','东京分行',this)" target="_blank" title="东京分行" istitle="true">东京分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://kr.ccb.com/seoul/cn/index.html" onclick="recordLinkArticleHits('74c7d1c075b645f4ac0568aa5e2f5445','2926e5440f3a412b9961342c3ad681ef','首尔分行',this)" target="_blank" title="首尔分行" istitle="true">首尔分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://uk.ccb.com/london/en/index.html" onclick="recordLinkArticleHits('6d2bad503049439ca768a626b36cb455','2926e5440f3a412b9961342c3ad681ef','伦敦分行',this)" target="_blank" title="伦敦分行" istitle="true">伦敦分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://us.ccb.com/newyork/cn/index.html" onclick="recordLinkArticleHits('f26963fc5c7c44bab6c4fc91c2402cbe','2926e5440f3a412b9961342c3ad681ef','纽约分行',this)" target="_blank" title="纽约分行" istitle="true">纽约分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://vn.ccb.com/lng/hochiminh/old/cn/index.shtml" onclick="recordLinkArticleHits('2a6bfcdbfc474fff8f4cabb5397f1263','2926e5440f3a412b9961342c3ad681ef','胡志明市分行',this)" target="_blank" title="胡志明市分行" istitle="true">胡志明市分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://au.ccb.com/lng/sydney/old/cn/index.shtml" onclick="recordLinkArticleHits('9e1775be41454164b6ede6fc603608a4','2926e5440f3a412b9961342c3ad681ef','悉尼分行',this)" target="_blank" title="悉尼分行" istitle="true">悉尼分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://ae.ccb.com/dubai/en/index.html" onclick="recordLinkArticleHits('2d5d3e99ecc644538d7d0e9a23980bf0','2926e5440f3a412b9961342c3ad681ef','迪拜国际金融中心分行',this)" target="_blank" title="迪拜国际金融中心分行" istitle="true">迪拜国际金融中心分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://tw.ccb.com/lng/taipei/old/cn/index.shtml" onclick="recordLinkArticleHits('6cc2324e821747b9b64519ee2d6d8e79','2926e5440f3a412b9961342c3ad681ef','台北分行',this)" target="_blank" title="台北分行" istitle="true">台北分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://lu.ccb.com/lng/luxembourg/en/index.shtml" onclick="recordLinkArticleHits('9ad7a4dddc3448f6b7c8d7b910cdeff0','2926e5440f3a412b9961342c3ad681ef','卢森堡分行',this)" target="_blank" title="卢森堡分行" istitle="true">卢森堡分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://mo.ccb.com/macau_sc/personal/index.html" onclick="recordLinkArticleHits('c3ae2d4b7b834f9d955966b03f0778c4','2926e5440f3a412b9961342c3ad681ef','澳门分行',this)" target="_blank" title="澳门分行" istitle="true">澳门分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://ca.ccb.com/lng/toronto/old/en/index.shtml" onclick="recordLinkArticleHits('f5513173b7644fcb93652b9c502acc73','2926e5440f3a412b9961342c3ad681ef','多伦多分行',this)" target="_blank" title="多伦多分行" istitle="true">多伦多分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://ch.ccb.com/lng/zurich/en/index.shtml" onclick="recordLinkArticleHits('ffb1b658bdbd424db68894f1f617b6a9','2926e5440f3a412b9961342c3ad681ef','苏黎世分行',this)" target="_blank" title="苏黎世分行" istitle="true">苏黎世分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://cl.ccb.com/chile/en/indexv3.html" onclick="recordLinkArticleHits('d2ebbe68ce264598a956588cb5ea87d4','2926e5440f3a412b9961342c3ad681ef','智利分行',this)" target="_blank" title="智利分行" istitle="true">智利分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://www.ccb.com/lng/astana/en/index.shtml" onclick="recordLinkArticleHits('46170c2eac2f4e08bcbbdceec16a3e2f','2926e5440f3a412b9961342c3ad681ef','阿斯塔纳分行',this)" target="_blank" title="阿斯塔纳分行" istitle="true">阿斯塔纳分行</a></li> 
+           <li class="jingwai_item list_li"><a href="https://ch.ccb.com/lng/labuan/en/index.shtml" onclick="recordLinkArticleHits('18d30a76bdd4405198559293f7fbc4e9','2926e5440f3a412b9961342c3ad681ef','纳闽分行',this)" target="_blank" title="纳闽分行" istitle="true">纳闽分行</a></li> 
+          </dl> 
+          <a class="fR f_blue" href="//group.ccb.cn/chn/group/company/company.shtml#tab2" target="_blank">查看更多&gt;</a> 
+         </div> 
+         <script>
+var items = $(".jingwai_item").toArray()
+var dlWarp
+for (var i = 0; i < items.length; i++) {
+    var item = items[i]
+    if (i % 6 === 0) {
+        dlWarp= $("<div class='list_one1 jingwai_container'><ul></ul></div>").insertBefore(".jingwai_list").find("ul")
+    }
+    dlWarp.append(item)
+}
+</script> 
+         <style>
+.jingwai_container{width:25%;display:inline-block;vertical-align: top;}
+</style> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="showj_r"> 
+      <div id="company_list" runat="server" name="境内附属公司" class=" column"> 
+       <div class="portlet" id="2abbcddbe39a4a7595fd6b648fe1f1bd" pagemoduleid="77b7f28ace024a7ba73cb87a19a0f2fc"> 
+        <div align="left" class="eps-portlet-header"> 
+         <div id="submenu2abbcddbe39a4a7595fd6b648fe1f1bd" class="eps-shadow eps-dn"> 
+          <ul class="float_list_ul"> 
+          </ul> 
+         </div> 
+        </div> 
+        <div> 
+         <div style="display:none" opentype="page"> 
+          <dd class="list_li" id="list_1" name=""> 
+           <a href="/chn/2021-06/24/article_2022090618314210674.shtml" onclick="void(0)" target="_blank" title="建信基金管理有限责任公司" istitle="true">建信基金管理有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_2" name=""> 
+           <a href="/chn/2021-06/24/article_2021062418085077440.shtml" onclick="void(0)" target="_blank" title="建信金融租赁有限公司" istitle="true">建信金融租赁有限公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_3" name=""> 
+           <a href="/chn/2021-06/24/article_2021062418074349060.shtml" onclick="void(0)" target="_blank" title="建信信托有限责任公司" istitle="true">建信信托有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_4" name="建信人寿保险有限公司"> 
+           <a href="/chn/2021-06/24/article_2021062418040662815.shtml" onclick="void(0)" target="_blank" title="建信人寿保险股份有限公司" istitle="true">建信人寿保险股份有限公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_5" name=""> 
+           <a href="/chn/2021-06/24/article_2021062418031433737.shtml" onclick="void(0)" target="_blank" title="建信期货有限责任公司" istitle="true">建信期货有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_9" name=""> 
+           <a href="/chn/2022-04/08/article_2022040815323281868.shtml" onclick="void(0)" target="_blank" title="建信金融科技有限责任公司" istitle="true">建信金融科技有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_6" name=""> 
+           <a href="/chn/2021-06/24/article_2021062418022178113.shtml" onclick="void(0)" target="_blank" title="中德住房储蓄银行有限责任公司" istitle="true">中德住房储蓄银行有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_7" name=""> 
+           <a href="/chn/2021-06/24/article_2021062418005415074.shtml" onclick="void(0)" target="_blank" title="建信金融资产投资有限公司" istitle="true">建信金融资产投资有限公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_8" name=""> 
+           <a href="/chn/2021-06/24/article_2021062417592555004.shtml" onclick="void(0)" target="_blank" title="建信财产保险有限公司" istitle="true">建信财产保险有限公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_" name="建信养老金管理有限责任公司"> 
+           <a href="/chn/2021-06/16/article_2021061618042782638.shtml" onclick="void(0)" target="_blank" title="建信养老金管理有限责任公司" istitle="true">建信养老金管理有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_" name=""> 
+           <a href="/chn/2022-04/08/article_2022040815331561288.shtml" onclick="void(0)" target="_blank" title="建银工程咨询有限责任公司" istitle="true">建银工程咨询有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_" name=""> 
+           <a href="/chn/2022-04/08/article_2022040815340267765.shtml" onclick="void(0)" target="_blank" title="建信股权投资管理有限责任公司" istitle="true">建信股权投资管理有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_10" name=""> 
+           <a href="/chn/2022-04/08/article_2022040815360282377.shtml" onclick="void(0)" target="_blank" title="建信理财有限责任公司" istitle="true">建信理财有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_" name=""> 
+           <a href="/chn/2022-04/08/article_2022040815364231139.shtml" onclick="void(0)" target="_blank" title="建信住房服务有限责任公司" istitle="true">建信住房服务有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_" name=""> 
+           <a href="/chn/2024-11/05/article_2024110509590318982.shtml" onclick="void(0)" target="_blank" title="建信消费金融有限责任公司" istitle="true">建信消费金融有限责任公司</a> 
+          </dd> 
+          <dd class="list_li" id="list_" name=""> 
+           <a href="/chn/2021-06/16/article_2021061611502433654.shtml" onclick="void(0)" target="_blank" title="建行集团并表机构及使用总行商标的机构名单" istitle="true">建行集团并表机构及使用总行商...</a> 
+          </dd> 
+         </div> 
+         <div class="list_one1 list_left fl"> 
+          <dl> 
+          </dl> 
+         </div> 
+         <div class="list_one1 list_right fl"> 
+          <dl> 
+          </dl> 
+         </div> 
+         <a class="fR f_blue" href="//group.ccb.cn/chn/group/company/company.shtml#tab2" target="_blank">查看更多&gt;</a> 
+         <script>
+   for(var i=1;i<6;i++){
+       if($("#list_"+i).attr("name")){
+         $("#list_"+i+" a").text($("#list_"+i).attr("name"))
+       }
+       $(".list_left dl").append($("#list_"+i))
+   }
+   for(var j=6;j<11;j++){
+      if($("#list_"+j).attr("name")){
+         $("#list_"+j+" a").text($("#list_"+j).attr("name"))
+       }
+       $(".list_right dl").append($("#list_"+j))
+   }
+</script> 
+         <style>
+.list_one1 dl dd{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #0066b3;
+    margin-left:8px;
+    line-height: 40px;
+}
+.list_one1 dl dd a{color:#0066b3}
+.list_one1 dl dd a:hover{color:#fff}
+
+</style> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="clear"></div> 
+</div> 
+<script>
+    function tabshow(obj1,obj2,cl)
+    {
+      var id;
+      $(obj1).mouseover(function(){
+      id=$(obj1).index($(this));	
+      $(obj1).removeClass(cl);
+      $(this).addClass(cl);
+      $(obj2).hide();
+      $(obj2).eq(id).show();
+      })	
+      $(obj2+":first").show();
+    }
+    tabshow(".zz_top_lii",".showj_r","hover")
+  </script>
+		<!--include virtual="/cn/v3/head_content/head_ccbgroup.html"-->
+        </li>
+        <li><a href="#" id="white_content3" class="header_top_right_a">国内分行</a>
+         <!--国内分行业务维护部分-->				
+		
+
+
+
+
+  
+	     <div id="MyDiv" class="white_content3" >
+            <div class="zhezhao">
+              <div class="zz_top">
+                <div class="zz_top_left fl">
+                  <ul>
+                    <li class="zz_top_li">列表模式</li>
+                    <div class="clear"></div>
+                  </ul>
+                </div>
+                <div class="zz_top_right1 fr"> <a href="#" id="button2" class="btn3"><img src="http://image4.ccb.com/cn/home/v3/images/shutdown.png"></a> </div>
+                <div class="clear"></div>
+              </div>
+              <div class="tab_jt">
+                   
+                <div class="zz_info">
+                  <ul class="map_list clearfix">
+              <li>
+                <div>ABCDF</div>
+                 <a href="http://www.ccb.com/ah/index.html" target="_blank">安徽省分行</a><a href="http://www.ccb.com/bj/index.html" target="_blank">北京市分行</a><a href="http://www.ccb.com/cq/index.html" target="_blank">重庆市分行</a><a href="http://www.ccb.com/dl/index.html" target="_blank">大连市分行</a><a href="http://www.ccb.com/fj/index.html" target="_blank">福建省分行</a>                      					
+              </li>
+              <li>
+                <div>G</div>
+                 <a href="http://www.ccb.com/gd/index.html" target="_blank">广东省分行</a><a href="http://www.ccb.com/gx/index.html" target="_blank">广西区分行</a><a href="http://www.ccb.com/gz/index.html" target="_blank">贵州省分行</a><a href="http://www.ccb.com/gs/index.html" target="_blank">甘肃省分行</a>         
+              </li>
+              <li>
+                <div>H</div>
+                 <a href="http://www.ccb.com/ha/index.html" target="_blank">河南省分行</a><a href="http://www.ccb.com/he/index.html" target="_blank">河北省分行</a><a href="http://www.ccb.com/hl/index.html" target="_blank">黑龙江省分行</a><a href="http://www.ccb.com/hb/index.html" target="_blank">湖北省分行</a><a href="http://www.ccb.com/hn/index.html" target="_blank">湖南省分行</a><a href="http://www.ccb.com/hi/index.html" target="_blank">海南省分行</a>
+              </li>
+              <li>
+                <div>JL</div>
+				<a href="http://www.ccb.com/ln/index.html" target="_blank">辽宁省分行</a><a href="http://www.ccb.com/jl/index.html" target="_blank">吉林省分行</a><a href="http://www.ccb.com/js/index.html" target="_blank">江苏省分行</a><a href="http://www.ccb.com/jx/cn/index.html" target="_blank">江西省分行</a>
+              </li>
+              <li>
+                <div>NQ</div>
+				<a href="http://www.ccb.com/nm/index.html" target="_blank">内蒙古分行</a><a href="http://www.ccb.com/nb/index.html" target="_blank">宁波市分行</a><a href="http://www.ccb.com/nx/index.html" target="_blank">宁夏区分行</a><a href="http://www.ccb.com/qd/index.html" target="_blank">青岛市分行</a><a href="http://www.ccb.com/qh/index.html" target="_blank">青海省分行</a>
+              </li>
+              <li>
+                <div>S</div>
+				<a href="http://www.ccb.com/sd/index.html" target="_blank">山东省分行</a><a href="http://www.ccb.com/sn/index.html" target="_blank">陕西省分行</a><a href="http://www.ccb.com/sx/index.html" target="_blank">山西省分行</a><a href="http://www.ccb.com/sh/index.html" target="_blank">上海市分行</a><a href="http://www.ccb.com/sz/index.html" target="_blank">深圳市分行</a><a href="http://www.ccb.com/sc/index.html" target="_blank">四川省分行</a><a href="http://www.ccb.com/su/index.html" target="_blank">苏州分行</a>
+              </li>
+              <li>
+                <div>TXYZ</div>
+				<a href="http://www.ccb.com/tj/index.html" target="_blank">天津市分行</a><a href="http://www.ccb.com/xm/index.html" target="_blank">厦门市分行</a><a href="http://www.ccb.com/xj/index.html" target="_blank">新疆区分行</a><a href="http://www.ccb.com/xz/index.html" target="_blank">西藏区分行</a><a href="http://www.ccb.com/yn/index.html" target="_blank">云南省分行</a><a href="http://www.ccb.com/zj/index.html" target="_blank">浙江省分行</a>
+              </li>
+            </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+
+
+
+
+        </li>
+		<!--
+        <li><a href="http://job.ccb.com" class="header_top_right_a" target="_blank">诚聘英才</a></li>
+		<li class="padding_13 header_top_right_a">|</li>
+		<li><a href="http://yun.ccb.com" target="_blank" class="header_top_right_a">建行云</a></li> -->
+		
+		<li class="padding_13 header_top_right_a">|</li>
+		<li><a href="/cn/investor/indexv3.html" target="_blank" class="header_top_right_a">投资者关系</a></li>
+		<li><a href="/cn/group/esg/index.html" target="_blank" class="header_top_right_a">建行ESG</a></li>       </ul>
+    </div> 
+  </div>
+</div>
+<div class="header_box">
+  <div class="header">
+	<div class="logo"><a href="/gx/cn/index.html"><img src="/gx/cn/v3/images/index_logo_gx.gif" alt="中国建设银行" style=" width: 200px; "/></a></div>
+    <div class="chengshixuanze">
+    <div class="select-city"><a href="javascript:void(0)" id="txt" class="toggle_btn pointer">北京市</a></div>
+    <div class="select_hide" style="background:#fff;">
+        <div class="place_list">
+            <div id="arrow1" class="toggle_city">
+                <div class="change_city_bg hide">
+                    <div class="change_city_box">
+                        <div class="change_city_head">
+                            <div class="beijing"><a href="javascript:void(0)" id="shouqi">北京市</a></div>
+                            <div class="city-seach"> <input type="text" class="abc_input" value="快速搜索城市（支持全拼/简拼）">
+                                <input type="hidden" id="city_code_id" value=""> <button type="button">确定</button>
+                            </div>
+                        </div>
+                        <div class="change_city_body clearfix">
+                            <div class="change_city_tishi"> 请选择省份（按首字拼音排序）： </div>
+                            <div class="pro_city3">
+                                <div class="pro_city3_list1"><div class="pro_city3_data"> <a id="340000" name="安徽省" href="javascript:void(0)">安徽省</a>  <a id="110000" name="北京市" href="javascript:void(0)" class="off">北京市</a>  <a id="500000" name="重庆市" href="javascript:void(0)" class="off">重庆市</a>  <a id="350000" name="福建省" href="javascript:void(0)">福建省</a>  <a id="620000" name="甘肃省" href="javascript:void(0)">甘肃省</a>  <a id="440000" name="广东省" href="javascript:void(0)">广东省</a>  <a id="450000" name="广西区" href="javascript:void(0)">广西区</a>  <a id="520000" name="贵州省" href="javascript:void(0)">贵州省</a> </div><div class="pro_city3_data"> <a id="460000" name="海南省" href="javascript:void(0)">海南省</a>  <a id="130000" name="河北省" href="javascript:void(0)">河北省</a>  <a id="410000" name="河南省" href="javascript:void(0)">河南省</a>  <a id="230000" name="黑龙江" href="javascript:void(0)">黑龙江</a>  <a id="420000" name="湖北省" href="javascript:void(0)">湖北省</a>  <a id="430000" name="湖南省" href="javascript:void(0)">湖南省</a>  <a id="220000" name="吉林省" href="javascript:void(0)">吉林省</a>  <a id="320000" name="江苏省" href="javascript:void(0)">江苏省</a> </div><div class="pro_city3_data"> <a id="360000" name="江西省" href="javascript:void(0)">江西省</a>  <a id="210000" name="辽宁省" href="javascript:void(0)">辽宁省</a>  <a id="150000" name="内蒙古" href="javascript:void(0)">内蒙古</a>  <a id="640000" name="宁夏区" href="javascript:void(0)">宁夏区</a>  <a id="630000" name="青海省" href="javascript:void(0)">青海省</a>  <a id="370000" name="山东省" href="javascript:void(0)">山东省</a>  <a id="610000" name="陕西省" href="javascript:void(0)">陕西省</a>  <a id="140000" name="山西省" href="javascript:void(0)">山西省</a> </div><div class="pro_city3_data"> <a id="310000" name="上海市" href="javascript:void(0)" class="off">上海市</a>  <a id="510000" name="四川省" href="javascript:void(0)">四川省</a>  <a id="120000" name="天津市" href="javascript:void(0)" class="off">天津市</a>  <a id="650000" name="新疆区" href="javascript:void(0)">新疆区</a>  <a id="540000" name="西藏区" href="javascript:void(0)">西藏区</a>  <a id="530000" name="云南省" href="javascript:void(0)">云南省</a>  <a id="330000" name="浙江省" href="javascript:void(0)">浙江省</a> </div><div class="limiter"><div class="pro_city3_list2 hide" id="city340000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="340800">安庆市</span>  <span id="340300">蚌埠市</span>  <span id="341400">巢湖市</span>  <span id="341700">池州市</span>  <span id="341100">滁州市</span>  <span id="341200">阜阳市</span>  <span id="340100">合肥市</span>  <span id="340600">淮北市</span>  <span id="340400">淮南市</span>  <span id="341000">黄山市</span>  <span id="341500">六安市</span>  <span id="340500">马鞍山市</span>  <span id="341300">宿州市</span>  <span id="340700">铜陵市</span>  <span id="340200">芜湖市</span>  <span id="341800">宣城市</span>  <span id="341600">亳州市</span> </div></div> <div class="pro_city3_list2 hide" id="city350000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="350100">福州市</span>  <span id="350800">龙岩市</span>  <span id="350700">南平市</span>  <span id="350900">宁德市</span>  <span id="350300">莆田市</span>  <span id="350500">泉州市</span>  <span id="350400">三明市</span>  <span id="350200">厦门市</span>  <span id="350600">漳州市</span> </div></div> <div class="pro_city3_list2 hide" id="city620000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="620400">白银市</span>  <span id="621100">定西市</span>  <span id="623000">甘南藏族</span>  <span id="620200">嘉峪关市</span>  <span id="620300">金昌市</span>  <span id="620900">酒泉市</span>  <span id="620100">兰州市</span>  <span id="622900">临夏回族</span>  <span id="622600">陇南地区</span>  <span id="621200">陇南市</span>  <span id="620800">平凉市</span>  <span id="621000">庆阳市</span>  <span id="620500">天水市</span>  <span id="620600">武威市</span>  <span id="620700">张掖市</span> </div></div> <div class="pro_city3_list2 hide" id="city440000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="445100">潮州市</span>  <span id="441900">东莞市</span>  <span id="440600">佛山市</span>  <span id="440100">广州市</span>  <span id="441600">河源市</span>  <span id="441300">惠州市</span>  <span id="440700">江门市</span>  <span id="445200">揭阳市</span>  <span id="440900">茂名市</span>  <span id="441400">梅州市</span>  <span id="441800">清远市</span>  <span id="440500">汕头市</span>  <span id="441500">汕尾市</span>  <span id="440200">韶关市</span>  <span id="440300">深圳市</span>  <span id="441700">阳江市</span>  <span id="445300">云浮市</span>  <span id="440800">湛江市</span>  <span id="441200">肇庆市</span>  <span id="442000">中山市</span>  <span id="440400">珠海市</span> </div></div> <div class="pro_city3_list2 hide" id="city450000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="451000">百色市</span>  <span id="450500">北海市</span>  <span id="451400">崇左市</span>  <span id="450600">防城港市</span>  <span id="450300">桂林市</span>  <span id="450800">贵港市</span>  <span id="451200">河池市</span>  <span id="451100">贺州市</span>  <span id="451300">来宾市</span>  <span id="450200">柳州市</span>  <span id="450100">南宁市</span>  <span id="450700">钦州市</span>  <span id="450400">梧州市</span>  <span id="450900">玉林市</span> </div></div> <div class="pro_city3_list2 hide" id="city520000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="520400">安顺</span>  <span id="522400">毕节</span>  <span id="520100">贵阳</span>  <span id="520200">六盘水</span>  <span id="522600">黔东南</span>  <span id="522700">黔南</span>  <span id="522300">黔西南</span>  <span id="522200">铜仁</span>  <span id="520300">遵义</span> </div></div> <div class="pro_city3_list2 hide" id="city460000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="469030">白沙黎族</span>  <span id="469035">保亭黎族</span>  <span id="469031">昌江黎族</span>  <span id="469027">澄迈县</span>  <span id="469025">定安县</span>  <span id="469007">东方市</span>  <span id="460100">海口市</span>  <span id="469033">乐东黎族</span>  <span id="469028">临高县</span>  <span id="469034">陵水黎族</span>  <span id="469038">南沙群岛</span>  <span id="469002">琼海市</span>  <span id="469036">琼中黎族</span>  <span id="460200">三亚市</span>  <span id="469026">屯昌县</span>  <span id="469006">万宁市</span>  <span id="469005">文昌市</span>  <span id="469001">五指山市</span>  <span id="469037">西沙群岛</span>  <span id="469039">中沙群岛</span>  <span id="469003">儋州市</span> </div></div> <div class="pro_city3_list2 hide" id="city130000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="130600">保定市</span>  <span id="130900">沧州市</span>  <span id="130800">承德市</span>  <span id="130400">邯郸市</span>  <span id="131100">衡水市</span>  <span id="131000">廊坊市</span>  <span id="130300">秦皇岛市</span>  <span id="130100">石家庄市</span>  <span id="130200">唐山市</span>  <span id="130500">邢台市</span>  <span id="130700">张家口市</span> </div></div> <div class="pro_city3_list2 hide" id="city410000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="410500">安阳市</span>  <span id="410600">鹤壁市</span>  <span id="410800">焦作市</span>  <span id="410200">开封市</span>  <span id="410300">洛阳市</span>  <span id="411300">南阳市</span>  <span id="410400">平顶山市</span>  <span id="411200">三门峡市</span>  <span id="411400">商丘市</span>  <span id="410700">新乡市</span>  <span id="411500">信阳市</span>  <span id="411000">许昌市</span>  <span id="410100">郑州市</span>  <span id="411600">周口市</span>  <span id="411700">驻马店市</span>  <span id="411100">漯河市</span>  <span id="410900">濮阳市</span>  <span id="410881">济源市</span> </div></div> <div class="pro_city3_list2 hide" id="city230000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="230600">大庆市</span>  <span id="232700">大兴安岭</span>  <span id="230100">哈尔滨市</span>  <span id="230400">鹤岗市</span>  <span id="231100">黑河市</span>  <span id="230300">鸡西市</span>  <span id="230800">佳木斯市</span>  <span id="231000">牡丹江市</span>  <span id="230900">七台河市</span>  <span id="230200">齐齐哈尔</span>  <span id="230500">双鸭山市</span>  <span id="231200">绥化市</span>  <span id="230700">伊春市</span> </div></div> <div class="pro_city3_list2 hide" id="city420000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="420700">鄂州市</span>  <span id="422800">恩施州</span>  <span id="421100">黄冈市</span>  <span id="420200">黄石市</span>  <span id="420800">荆门市</span>  <span id="421000">荆州市</span>  <span id="429005">潜江市</span>  <span id="429021">神农架林区</span>  <span id="420300">十堰市</span>  <span id="421300">随州市</span>  <span id="429006">天门市</span>  <span id="420100">武汉市</span>  <span id="429004">仙桃市</span>  <span id="421200">咸宁市</span>  <span id="420600">襄阳市</span>  <span id="420900">孝感市</span>  <span id="420500">宜昌市</span> </div></div> <div class="pro_city3_list2 hide" id="city430000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="430700">常德市</span>  <span id="430100">长沙市</span>  <span id="431000">郴州市</span>  <span id="430400">衡阳市</span>  <span id="431200">怀化市</span>  <span id="431300">娄底市</span>  <span id="430500">邵阳市</span>  <span id="430300">湘潭市</span>  <span id="433100">湘西</span>  <span id="430900">益阳市</span>  <span id="431100">永州市</span>  <span id="430600">岳阳市</span>  <span id="430800">张家界市</span>  <span id="430200">株洲市</span> </div></div> <div class="pro_city3_list2 hide" id="city220000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="220800">白城市</span>  <span id="220600">白山市</span>  <span id="220100">长春市</span>  <span id="220200">吉林市</span>  <span id="220400">辽源市</span>  <span id="220300">四平市</span>  <span id="220700">松原市</span>  <span id="220500">通化市</span>  <span id="222400">延边朝鲜</span> </div></div> <div class="pro_city3_list2 hide" id="city320000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="320400">常州市</span>  <span id="320800">淮安市</span>  <span id="320700">连云港市</span>  <span id="320100">南京市</span>  <span id="320600">南通市</span>  <span id="320500">苏州市</span>  <span id="321300">宿迁市</span>  <span id="321200">泰州市</span>  <span id="320200">无锡市</span>  <span id="320300">徐州市</span>  <span id="320900">盐城市</span>  <span id="321000">扬州市</span>  <span id="321100">镇江市</span> </div></div> <div class="pro_city3_list2 hide" id="city360000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="361000">抚州市</span>  <span id="360700">赣州市</span>  <span id="360800">吉安市</span>  <span id="360200">景德镇市</span>  <span id="360400">九江市</span>  <span id="360100">南昌市</span>  <span id="360300">萍乡市</span>  <span id="361100">上饶市</span>  <span id="360500">新余市</span>  <span id="360900">宜春市</span>  <span id="360600">鹰潭市</span> </div></div> <div class="pro_city3_list2 hide" id="city210000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="210300">鞍山市</span>  <span id="210500">本溪市</span>  <span id="211300">朝阳市</span>  <span id="210600">丹东市</span>  <span id="210400">抚顺市</span>  <span id="210900">阜新市</span>  <span id="211400">葫芦岛市</span>  <span id="210700">锦州市</span>  <span id="211000">辽阳市</span>  <span id="211100">盘锦市</span>  <span id="210100">沈阳市</span>  <span id="211200">铁岭市</span>  <span id="210800">营口市</span>  <span id="210200">大连市</span> </div></div> <div class="pro_city3_list2 hide" id="city150000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="152900">阿拉善盟</span>  <span id="150800">巴彦淖尔</span>  <span id="150200">包头市</span>  <span id="150400">赤峰市</span>  <span id="150600">鄂尔多斯</span>  <span id="150100">呼和浩特</span>  <span id="150700">呼伦贝尔</span>  <span id="150500">通辽市</span>  <span id="150300">乌海市</span>  <span id="150900">乌兰察布</span>  <span id="152500">锡林郭勒</span>  <span id="152200">兴安盟</span> </div></div> <div class="pro_city3_list2 hide" id="city640000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="640400">固原市</span>  <span id="640200">石嘴山市</span>  <span id="640300">吴忠市</span>  <span id="640100">银川市</span>  <span id="640500">中卫市</span> </div></div> <div class="pro_city3_list2 hide" id="city630000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="632600">果洛藏族</span>  <span id="632200">海北藏族</span>  <span id="632100">海东地区</span>  <span id="632500">海南藏族</span>  <span id="632800">海西蒙古</span>  <span id="632300">黄南藏族</span>  <span id="630100">西宁市</span>  <span id="632700">玉树藏族</span> </div></div> <div class="pro_city3_list2 hide" id="city370000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="371600">滨州市</span>  <span id="371400">德州市</span>  <span id="370500">东营市</span>  <span id="371700">菏泽市</span>  <span id="370100">济南市</span>  <span id="370800">济宁市</span>  <span id="371500">聊城市</span>  <span id="371300">临沂市</span>  <span id="371100">日照市</span>  <span id="370900">泰安市</span>  <span id="371000">威海市</span>  <span id="370700">潍坊市</span>  <span id="370600">烟台市</span>  <span id="370400">枣庄市</span>  <span id="370300">淄博市</span>  <span id="370200">青岛市</span> </div></div> <div class="pro_city3_list2 hide" id="city610000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="610900">安康市</span>  <span id="610300">宝鸡市</span>  <span id="610700">汉中市</span>  <span id="611000">商洛市</span>  <span id="610200">铜川市</span>  <span id="610500">渭南市</span>  <span id="610100">西安市</span>  <span id="610400">咸阳市</span>  <span id="610600">延安市</span>  <span id="610800">榆林市</span> </div></div> <div class="pro_city3_list2 hide" id="city140000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="140400">长治市</span>  <span id="140200">大同市</span>  <span id="140500">晋城市</span>  <span id="140700">晋中市</span>  <span id="141000">临汾市</span>  <span id="141100">吕梁市</span>  <span id="140600">朔州市</span>  <span id="140100">太原市</span>  <span id="140900">忻州市</span>  <span id="140300">阳泉市</span>  <span id="140800">运城市</span> </div></div> <div class="pro_city3_list2 hide" id="city510000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="513200">阿坝</span>  <span id="511900">巴中市</span>  <span id="510100">成都市</span>  <span id="511700">达州市</span>  <span id="510600">德阳市</span>  <span id="513300">甘孜</span>  <span id="511600">广安市</span>  <span id="510800">广元市</span>  <span id="511100">乐山市</span>  <span id="513400">凉山市</span>  <span id="511400">眉山市</span>  <span id="510700">绵阳市</span>  <span id="511300">南充市</span>  <span id="511000">内江市</span>  <span id="510400">攀枝花市</span>  <span id="510900">遂宁市</span>  <span id="511800">雅安市</span>  <span id="511500">宜宾市</span>  <span id="512000">资阳市</span>  <span id="510300">自贡市</span>  <span id="510500">泸州市</span> </div></div> <div class="pro_city3_list2 hide" id="city650000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="652900">阿克苏</span>  <span id="659002">阿拉尔</span>  <span id="654300">阿勒泰</span>  <span id="652800">巴音郭楞</span>  <span id="652700">博尔塔拉</span>  <span id="652300">昌吉回族</span>  <span id="652200">哈密</span>  <span id="653200">和田</span>  <span id="653100">喀什</span>  <span id="650200">克拉玛依</span>  <span id="653000">克孜勒苏</span>  <span id="659001">石河子</span>  <span id="654200">塔城</span>  <span id="659003">图木舒克</span>  <span id="652100">吐鲁番</span>  <span id="650100">乌鲁木齐</span>  <span id="659004">五家渠</span>  <span id="654000">伊犁</span> </div></div> <div class="pro_city3_list2 hide" id="city540000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="542500">阿里</span>  <span id="542100">昌都</span>  <span id="540100">拉萨</span>  <span id="542600">林芝</span>  <span id="542400">那曲</span>  <span id="542300">日喀则</span>  <span id="542200">山南</span> </div></div> <div class="pro_city3_list2 hide" id="city530000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="530500">保山市</span>  <span id="532300">楚雄州</span>  <span id="532900">大理州</span>  <span id="533100">德宏州</span>  <span id="533400">迪庆藏族</span>  <span id="532500">红河州</span>  <span id="530100">昆明市</span>  <span id="530700">丽江市</span>  <span id="530900">临沧市</span>  <span id="533300">怒江州</span>  <span id="530300">曲靖市</span>  <span id="530800">思茅市</span>  <span id="532600">文山州</span>  <span id="532800">西双版纳</span>  <span id="530400">玉溪市</span>  <span id="530600">昭通市</span> </div></div> <div class="pro_city3_list2 hide" id="city330000"><div class="top_arrow"></div><div class="top_arrow top_arrow1"></div><div class="pro_body_bg"> <span id="330100">杭州市</span>  <span id="330200">宁波市</span>  <span id="330500">湖州市</span>  <span id="330400">嘉兴市</span>  <span id="330700">金华市</span>  <span id="331100">丽水市</span>  <span id="330600">绍兴市</span>  <span id="331000">台州市</span>  <span id="330300">温州市</span>  <span id="330900">舟山市</span>  <span id="330800">衢州市</span> </div></div></div></div>
+                            </div>
+                        </div>
+                        <div class="change_city_footer"></div>
+                        <div class="city1_box hide">
+                            <div class="city1_box_body">
+                                <ul class="clearfix"> </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>          
+    ﻿<div class="insur_nav">
+	<ul>
+		<li><a href="/gx/cn/index.html" class="on">广西区分行首页</a></li>
+		<li><a href="/gx/cn/faverable/favorable__1.html">优惠资讯</a></li>
+		<li><a href="
+/gx/cn/business/20161115_1479196916.html
+">业务推介</a></li>
+		<li><a href="/gx/cn/serviceGuide.html">服务指南</a></li>
+	</ul>
+</div>   
+     
+    <div class="search_tow" style="display:none;"><div class="search_nav_line"></div><a href="javascript:void(0)" class="search_tow_a"></a><div class="search_nav"><div class="gb_btn"><a href="javascript:void(0);" class="sd_sn"><img src="/cn/home/v3/images/gb.png"></a></div><div class="search_sn"><form name="SearchForm" class="AcqStep" action="/cn/home/search.html" method="GET" target="_blank"><table  width="100%" style="position: relative;"><tbody><tr><td class="sn_td1"><input type="text" class="search_input" name="keyword" /></td><td class="sn_td2"><input class="search_btn " type="submit" value="搜索"></td></tr><tr><td class="hot-words" colspan="2" align="left"><span>热门关键字：</span> <a href="http://www.ccb.com/cn/home/search.html?keyword=电子银行" class="h-words" target="_blank">电子银行</a><a href="http://www.ccb.com/cn/home/search.html?keyword=信用卡" class="h-words" target="_blank">信用卡</a><a href="http://www.ccb.com/cn/home/search.html?keyword=悦生活" class="h-words" target="_blank">悦生活</a><a href="http://www.ccb.com/cn/home/search.html?keyword=贵金属" class="h-words" target="_blank">贵金属</a></td></tr></tbody></table><div class="tixing" style=" width: 160px; height: 36px; float: right; position: absolute; right: 88px; top: 34px; text-align: center; line-height: 36px;display:none;"><span style="color:red;">请输入搜索关键字</span></div></form></div></div></div><script type="text/javascript">$(function(){$('.sn_td2').mouseover(function(){if($('.sn_td1 input').val() == ""){$('.sn_td2 input').attr('type','button');}else{$('.sn_td2 input').attr('type','submit');}});$('.sn_td2').mouseout(function(){$('.tixing').hide();});});$('.sn_td2').click(function(){if($('.sn_td2 input').attr('type') == 'button'){$('.tixing').show();}else{$('.tixing').hide();}})	</script>
+	
+<script type="text/javascript" src="/cn/v3/include/login/login.js"></script>
+<style>
+	.hm_bott {
+		height: 30px;
+		line-height: 30px;
+		background: url(/cn/v3/upload/photo/20151206_1449372202/20160309190542866975.png) no-repeat 21px center;
+	}
+</style>
+<div class="Quick_Link">
+	<iframe id="loginByWyIframe" src="" style="height:0px;width:0px;display:none;"></iframe>
+	<div class="Quick_Link_top login_person_top">
+		<div class="select"></div>
+		<div class="select_list w_160 lfloat">
+			<span class="select_value">个人网上银行</span>
+			<div class="select_ul">
+				<ul>
+					<li class="choose">个人网上银行</li><li class="choose">商户服务平台</li><li class="choose">网站</li><li class="choose">善融商务</li><li class="choose">企业ERP云平台</li>
+				</ul>
+			</div>
+		</div>
+		<a id="http://www.ccb.com/cn/jump/personal_loginbank.html" style="cursor:pointer" class="Quick_Link_top_button" target="_blank">登录</a><a id="http://www.ccb.com/cn/home/tysh/tysh_index.html" style="cursor:pointer" class="Quick_Link_top_button hide" target="_blank">登录</a><a id="http://login.ccb.com/tran/WCCMainPlatV5?CCB_IBSVersion=V5&SERVLET_NAME=WCCMainPlatV5&TXCODE=NHY010" style="cursor:pointer" class="Quick_Link_top_button hide" target="_blank">登录</a><a id="javascript:window.location='ht'+'tps://buy.shanrongmall.com/member/memberBegin.jhtml'" style="cursor:pointer" class="Quick_Link_top_button hide" target="_blank">登录</a><a id="javascript:window.location='ht'+'tp://erp.ccb.com'" style="cursor:pointer" class="Quick_Link_top_button hide" target="_blank">登录</a>
+	</div>
+	<div class="Quick_Link_bottom"></div>
+	<div class="Quick_Link_box">
+		<div class="Quick_Link_m">
+			<a target="_blank" id="http://ebank.ccb.com/cn/jump/secure.html" class="zhuce" style="cursor:pointer">安全指引</a><a target="_blank" id="http://ebank.ccb.com/cn/ebank/personal/downloadcenter/201306071370593615.html" class="zhuce" style="cursor:pointer">下载中心</a><a target="_blank" id="http://ebank.ccb.com/cn/jump/demo.html" class="zhuce" style="cursor:pointer">功能演示</a><a target="_blank" id="http://www.ccb.com/cn/home/register/kstd_zhuce.html" class="zhuce" style="cursor:pointer">注册开通</a>
+		</div>
+		<div class="hm_bott">
+			<ul>
+				<li class="hm_li"><a href="http://www.ccb.com/cn/mycom/user_center.html" target="_blank">进入我的.com</a></li><li class="hm_li1"><a href="javascript:window.location='ht'+'tp://buy.shanrongmall.com/'" target="_blank">善融商务</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="hidemenu" style="display:none">
+	<div class="leftUseimg"><a href="#" onclick="toMyHead4LoginArea();"></a></div>
+	<div class="right_message">
+		<ul>
+			<li class="message_img">
+				<ul>
+					<li class="name_widyh"></li>
+				</ul>
+			</li>
+			<li>
+				<dl>
+					<dd class="m_r_d"><a href="#" onclick="toMyCom4LoginArea();">我的.com</a></dd>
+					<dd class="m_r_d"><a class="number" href="#" onclick="toMyMsg4LoginArea();"></a></dd>
+					<dd><a style="cursor:pointer" onclick="out();" class="close_window">安全退出</a></dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<div class="down_nemu_login">
+		<ul style="margin-top:3px;">
+			<li><a href="http://www.ccb.com/cn/jump/personal_loginbank.html" target="_blank" onclick="toWangYin4LoginArea();">进入个人网上银行</a></li>
+		</ul>
+	</div>
+</div>
+
+</div>
+
+</div>
+<div class="nav_more">
+	<div class="nav_detail">
+		<div class="nav_left"><a class="home" href="/cn/home/indexv3.html">国内分行</a><!--nav_home--><span>&gt;</span>﻿<a href="/gx/cn/index.html">广西区分行首页</a><!--nav_lj_index-->
+<span>&gt;</span>
+		<a href="./fhgg_list_1.html">最新公告</a><span>&gt;</span><span>详情</span>
+		</div>
+	</div>
+</div>
+
+
+<div class="section clearfix">
+	<!--w_660-->
+	<div class="w_660 lfloat">
+		<div class="content f14">
+			<h2>中国建设银行广西区分行小微企业授权清单、授信清单公示</h2>
+			
+		<div class="time">发布时间：2022-04-29</div>
+	
+			
+		<p style="text-indent: 21.2pt; line-height: 150%;"><span style="line-height: 150%; font-family: 新宋体;">为建立公开透明的小微金融服务流程，进一步提升小微企业金融服务效率，现将中国建设银行广西区分行&ldquo;授权清单&rdquo;、&ldquo;授信清单&rdquo;公示如下：</span></p>
+<p style="line-height: 150%;"><span style="line-height: 150%; font-family: 新宋体;">&nbsp;</span></p>
+<p style="line-height: 150%;"><span style="line-height: 150%; font-family: 新宋体;">附件1：</span></p>
+<table style="width: 525.25pt; margin-left: -30.05pt; border-collapse: collapse;" width="875">
+<tbody>
+<tr style="height: 28.2pt;">
+<td style="width: 525.25pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.2pt;" colspan="8" width="875">
+<p style="text-align: center;"><strong><span style="font-size: 14.0pt; font-family: '方正仿宋简体','serif';">中国建设银行广西区分行授权清单</span></strong></p>
+</td>
+</tr>
+<tr style="height: 17.4pt;">
+<td style="width: 149.6pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.4pt;" colspan="2" width="249">
+<p style="text-align: left;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">填表时间：2022年4月20日</span></p>
+</td>
+<td style="width: 97.1pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 17.4pt;" colspan="2" width="162">
+<p style="text-align: right;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">单位：万元，%</span></p>
+</td>
+</tr>
+<tr style="height: 39.0pt;">
+<td style="width: 78.75pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 39.0pt;" rowspan="2" width="131">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">银行名称</span></strong></p>
+</td>
+<td style="width: 70.85pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 39.0pt;" rowspan="2" width="118">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">业务类型</span></strong></p>
+</td>
+<td style="width: 10.0cm; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 39.0pt;" colspan="5" width="473">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">最高授信审批权限金额</span></strong></p>
+</td>
+<td style="width: 92.15pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 39.0pt;" rowspan="2" width="154">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">中长期贷款最高审批权限金额</span></strong></p>
+</td>
+</tr>
+<tr style="height: 34.95pt;">
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 34.95pt;" width="154">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">抵（质）押</span></strong></p>
+</td>
+<td style="width: 99.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 34.95pt;" colspan="2" width="165">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">保证</span></strong></p>
+</td>
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 34.95pt;" colspan="2" width="154">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">信用</span></strong></p>
+</td>
+</tr>
+<tr style="height: 52.95pt;">
+<td style="width: 78.75pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 52.95pt;" rowspan="2" width="131">
+<p style="text-align: center;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">中国建设银行广西区分行</span></p>
+</td>
+<td style="width: 70.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 52.95pt;" width="118">
+<p style="text-align: center;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">普惠型小微企业</span></p>
+</td>
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 52.95pt;" width="154">
+<p style="text-align: center;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">3000</span></p>
+</td>
+<td style="width: 99.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 52.95pt;" colspan="2" width="165">
+<p style="text-align: center;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">3000</span></p>
+</td>
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 52.95pt;" colspan="2" width="154">
+<p style="text-align: center;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">3000</span></p>
+</td>
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 52.95pt;" width="154">
+<p style="text-align: center;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">3000</span></p>
+</td>
+</tr>
+<tr style="height: 139.8pt;">
+<td style="width: 70.85pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 139.8pt;" width="118">
+<p style="text-align: center;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">个人经营性</span></p>
+</td>
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 139.8pt;" width="154">
+<p style="text-align: left;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">个人信贷业务审批权实行全额授权，最高审批权限以相关产品的金额限制为准（1000万元）</span></p>
+</td>
+<td style="width: 99.2pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 139.8pt;" colspan="2" width="165">
+<p style="text-align: left;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">个人信贷业务审批权实行全额授权，最高审批权限以相关产品的金额限制为准（1000万元）</span></p>
+</td>
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 139.8pt;" colspan="2" width="154">
+<p style="text-align: left;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">个人信贷业务审批权实行全额授权，最高审批权限以相关产品的金额限制为准（1000万元）</span></p>
+</td>
+<td style="width: 92.15pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 139.8pt;" width="154">
+<p style="text-align: left;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">个人信贷业务审批权实行全额授权，最高审批权限以相关产品的金额限制为准（1000万元）</span></p>
+</td>
+</tr>
+<tr style="height: 19.5pt;">
+<td style="width: 525.25pt; border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: solid black 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 19.5pt;" colspan="8" width="875">
+<p style="text-align: left;"><strong><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">备注：为提高审批效率，我行已优化审批流程，对普惠信贷业务实行审批集中，采取线上&ldquo;云审批&rdquo;方式。</span></strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-family: 新宋体;">附件2:</span></p>
+<table style="width: 534.0pt; margin-left: -30.05pt; border-collapse: collapse;" width="890">
+<tbody>
+<tr style="height: 28.2pt;">
+<td style="width: 534.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.2pt;" colspan="8" width="890">
+<p style="text-align: center;"><strong><span style="font-size: 14.0pt; font-family: '方正仿宋简体','serif';">中国建设银行广西区分行授信清单</span></strong></p>
+</td>
+</tr>
+<tr style="height: 14.4pt;">
+<td style="width: 191.95pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.4pt;" colspan="4" width="320">
+<p style="text-align: left;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">填表时间：2022年4月20日</span></p>
+</td>
+<td style="width: 58.35pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 14.4pt;" width="97">
+<p style="text-align: right;"><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">单位：天</span></p>
+</td>
+</tr>
+<tr style="height: 28.8pt;">
+<td style="width: 35.7pt; border: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="60">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">银行名称</span></strong></p>
+</td>
+<td style="width: 34.7pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="58">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">授信类型</span></strong></p>
+</td>
+<td style="width: 40.8pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="68">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">担保方式</span></strong></p>
+</td>
+<td style="width: 80.75pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="135">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">客户准入条件</span></strong></p>
+</td>
+<td style="width: 143.35pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="239">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">申请资料</span></strong></p>
+</td>
+<td style="width: 58.55pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="98">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif';">办理流程</span></strong></p>
+</td>
+<td style="width: 81.8pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="136">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">最长办理时限<br /> （工作日）</span></strong></p>
+</td>
+<td style="width: 58.35pt; border: solid windowtext 1.0pt; border-left: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 28.8pt;" width="97">
+<p style="text-align: center;"><strong><span style="font-size: 11.0pt; font-family: '方正仿宋简体','serif'; color: black;">相关产品</span></strong></p>
+</td>
+</tr>
+<tr style="height: 106.0pt;">
+<td style="width: 35.7pt; border: solid windowtext 1.0pt; border-top: none; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" rowspan="6" width="60">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">建设银行广西区分行</span></p>
+</td>
+<td style="width: 34.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" width="58">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">普惠型小微企业贷款</span></p>
+</td>
+<td style="width: 40.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" width="68">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">抵（质）押</span></p>
+</td>
+<td style="width: 80.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" width="135">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">小微企业；<br /> 2.企业主年满18周岁且不超过65周岁，中国内地居民;<br /> 3.企业和企业主信用状况良好；<br /> 4.抵押物支持商业住宅、别墅、办公用房、商业用房、建行房贷客户。</span></p>
+</td>
+<td style="width: 143.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" width="239">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">自然人借款人（企业主）资料<br /> （1）借款人及其配偶有效身份证件<br /> （2）借款人婚姻状况证明（已婚须提供结婚证，离婚的提供离婚证，未婚仅须在贷款申请表上签署声明）<br /> （3）借款人征信查询授权书（电子原件或纸质原件）<br /> （4）借款人配偶征信查询授权书（如需，电子原件或纸质原件）<br /> 2.企业资料<br /> （1）营业执照（原件影像或复印件）<br /> （2）公司最新有效章程（个体工商户、个人独资企业、一人有限责任公司等如无可不提供）<br /> （3）企业征信查询授权书（电子原件或纸质原件）<br /> （4）实际控制人证明材料（企业主为企业股东但股份比例小于50%或非股东时出具）<br /> 3.抵押物相关材料<br /> （1）房屋所有权证（原件影像或复印件）<br /> （2）抵押物评估报告（线上+线下评估方式需要，全线上评估方式无需）<br /> （3）抵押人征信授权书（含个人及法人）<br /> &nbsp; 抵押人为个人时需提供：<br /> （1）抵押人及其配偶身份证（原件影像或复印件）<br /> （2）抵押人征信查询授权书（电子原件或纸质原件）<br /> （3）抵押人婚姻状况证明（已婚须提供结婚证，离婚的提供离婚证，未婚仅须在贷款申请表上签署声明）<br /> &nbsp; 抵押人为公司须提供：<br /> （1）营业执照（原件影像或复印件）<br /> （2）法定代表人身份证（原件影像或复印件）<br /> （3）法定代表人授权书（原件或原件影像）和被授权人身份证（原件影像或复印件）<br /> （4）公司最新有效章程（个体工商户、个人独资企业、一人有限责任公司等如无可不提供）<br /> 4.建设银行认为必要的其他材料</span></p>
+</td>
+<td style="width: 58.55pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" width="98">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">业务申请、贷款申报2.贷款审批&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.合同签订、抵（质）押登记&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.贷款发放</span></p>
+</td>
+<td style="width: 81.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" width="136">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">7</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个工作日（期间需退回补充材料后再次申报审批的，自重新提交材料至授信审批部门之日起接续计算时限）</span></p>
+</td>
+<td style="width: 58.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 106.0pt;" width="97">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">抵押快贷、评分卡、成长之路授信及单笔、速贷通</span></p>
+</td>
+</tr>
+<tr style="height: 180.0pt;">
+<td style="width: 34.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 180.0pt;" width="58">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">　</span></p>
+</td>
+<td style="width: 40.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 180.0pt;" width="68">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">保证</span></p>
+</td>
+<td style="width: 80.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 180.0pt;" width="135">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">小微企业；<br /> 2.企业主年满18周岁且不超过65周岁，中国内地居民;<br /> 3.企业和企业主信用状况良好；<br /> 4.保证人符合建设银行准入要求。</span></p>
+</td>
+<td style="width: 143.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 180.0pt;" width="239">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">自然人借款人（企业主）资料<br /> （1）借款人及其配偶有效身份证件<br /> （2）借款人婚姻状况证明（已婚须提供结婚证，离婚的提供离婚证，未婚仅须在贷款申请表上签署声明）<br /> （3）借款人征信查询授权书（电子原件或纸质原件）<br /> （4）借款人配偶征信查询授权书（如需，电子原件或纸质原件）<br /> 2.企业资料<br /> （1）营业执照（原件影像或复印件）<br /> （2）公司最新有效章程（个体工商户、个人独资企业、一人有限责任公司等如无可不提供）<br /> （3）企业征信查询授权书（电子原件或纸质原件）<br /> （4）实际控制人证明材料（企业主为企业股东但股份比例小于50%或非股东时出具）<br /> 3.保证人资料<br /> （1）营业执照（原件影像或复印件）<br /> （2）公司最新有效章程<br /> （3）保证人担保决议<br /> 4.建设银行认为必要的其他材料</span></p>
+</td>
+<td style="width: 58.55pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 180.0pt;" width="98">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">业务申请贷款申报 2.贷款审批&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.合同签订、落实保证&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.贷款发放</span></p>
+</td>
+<td style="width: 81.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 180.0pt;" width="136">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">7</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个工作日（期间需退回补充材料后再次申报审批的，自重新提交申请材料之日起重新计算时限）</span></p>
+</td>
+<td style="width: 58.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 180.0pt;" width="97">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">评分卡、成长之路授信及单笔、速贷通</span></p>
+</td>
+</tr>
+<tr style="height: 132.0pt;">
+<td style="width: 34.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 132.0pt;" width="58">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">　</span></p>
+</td>
+<td style="width: 40.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 132.0pt;" width="68">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">信用</span></p>
+</td>
+<td style="width: 80.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 132.0pt;" width="135">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">小微企业；<br /> 2.企业主年满18周岁且不超过65周岁，中国内地居民;<br /> 3.企业和企业主信用状况良好。</span></p>
+</td>
+<td style="width: 143.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 132.0pt;" width="239">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">自然人借款人（企业主）资料<br /> （1）借款人及其配偶有效身份证件<br /> （2）借款人婚姻状况证明（已婚须提供结婚证，离婚的提供离婚证，未婚仅须在贷款申请表上签署声明）<br /> （3）借款人征信查询授权书（电子原件或纸质原件）<br /> （4）借款人配偶征信查询授权书（如需，电子原件或纸质原件）<br /> 2.企业资料<br /> （1）营业执照（原件影像或复印件）<br /> （2）公司最新有效章程（个体工商户、个人独资企业、一人有限责任公司等如无可不提供）<br /> （3）企业征信查询授权书（电子原件或纸质原件）<br /> （4）实际控制人证明材料（企业主为企业股东但股份比例小于50%或非股东时出具）<br /> 3.建设银行认为必要的其他材料</span></p>
+</td>
+<td style="width: 58.55pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 132.0pt;" width="98">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">业务申请贷款申报 2.贷款审批&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.合同签订&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.贷款发放</span></p>
+</td>
+<td style="width: 81.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 132.0pt;" width="136">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">5</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个工作日（期间需退回补充材料后再次申报审批的，自重新提交申请材料之日起重新计算时限）</span></p>
+</td>
+<td style="width: 58.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 132.0pt;" width="97">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">评分卡、成长之路授信及单笔、速贷通</span></p>
+</td>
+</tr>
+<tr style="height: 49.3pt;">
+<td style="width: 34.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.3pt;" width="58">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个人经营性贷款</span></p>
+</td>
+<td style="width: 40.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.3pt;" width="68">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">抵（质）押</span></p>
+</td>
+<td style="width: 80.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.3pt;" width="135">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个体工商户或个人独资企业；<br /> 2.企业主年满18周岁且不超过65周岁，中国内地居民;<br /> 3.企业和企业主信用状况良好；<br /> 4.抵押物支持商业住宅、别墅、办公用房、商业用房、建行房贷客户。</span></p>
+</td>
+<td style="width: 143.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.3pt;" width="239">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">自然人借款人（企业主）资料<br /> （1）借款人及其配偶有效身份证件<br /> （2）借款人婚姻状况证明（已婚须提供结婚证，离婚的提供离婚证，未婚仅须在贷款申请表上签署声明）<br /> （3）借款人征信查询授权书（电子原件或纸质原件）<br /> （4）借款人配偶征信查询授权书（如需，电子原件或纸质原件）<br /> 2.企业资料<br /> （1）营业执照（原件影像或复印件）<br /> （2）企业征信查询授权书（电子原件或纸质原件）<br /> 3.抵押物相关材料<br /> （1）房屋所有权证（原件影像或复印件）<br /> （2）抵押物评估报告（线上+线下评估方式需要，全线上评估方式无需）<br /> （3）抵押人征信授权书（含个人及法人）<br /> &nbsp; 抵押人为个人时需提供：<br /> （1）抵押人及其配偶身份证（原件影像或复印件）<br /> （2）抵押人征信查询授权书（电子原件或纸质原件）<br /> （3）抵押人婚姻状况证明（已婚须提供结婚证，离婚的提供离婚证，未婚仅须在贷款申请表上签署声明）<br /> &nbsp; 抵押人为公司须提供：<br /> （1）营业执照（原件影像或复印件）<br /> （2）法定代表人身份证（原件影像或复印件）<br /> （3）法定代表人授权书（原件或原件影像）和被授权人身份证（原件影像或复印件）<br /> （4）公司最新有效章程（个体工商户、个人独资企业、一人有限责任公司等如无可不提供）<br /> 4.建设银行认为必要的其他材料</span></p>
+</td>
+<td style="width: 58.55pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.3pt;" width="98">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">业务申请、贷款申报2.贷款审批&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.合同签订、抵（质）押登记&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.贷款发放</span></p>
+</td>
+<td style="width: 81.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.3pt;" width="136">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">7</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个工作日（期间需退回补充材料后再次申报审批的，自重新提交申请材料之日起重新计算时限）</span></p>
+</td>
+<td style="width: 58.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 49.3pt;" width="97">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">评分卡</span></p>
+</td>
+</tr>
+<tr style="height: 12.0pt;">
+<td style="width: 34.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.0pt;" width="58">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">　</span></p>
+</td>
+<td style="width: 40.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.0pt;" width="68">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">保证</span></p>
+</td>
+<td style="width: 80.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.0pt;" width="135">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">目前无此类产品</span></p>
+</td>
+<td style="width: 143.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.0pt;" width="239">
+<p style="text-align: center;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">&mdash;</span></p>
+</td>
+<td style="width: 58.55pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.0pt;" width="98">
+<p style="text-align: center;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">&mdash;</span></p>
+</td>
+<td style="width: 81.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.0pt;" width="136">
+<p style="text-align: center;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">&mdash;</span></p>
+</td>
+<td style="width: 58.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 12.0pt;" width="97">
+<p style="text-align: center;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif';">&mdash;</span></p>
+</td>
+</tr>
+<tr style="height: 108.0pt;">
+<td style="width: 34.7pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 108.0pt;" width="58">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">　</span></p>
+</td>
+<td style="width: 40.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 108.0pt;" width="68">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">信用</span></p>
+</td>
+<td style="width: 80.75pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 108.0pt;" width="135">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个体工商户或个人独资企业；<br /> 2.企业主年满18周岁且不超过65周岁，中国内地居民;<br /> 3.企业和企业主信用状况良好。</span></p>
+</td>
+<td style="width: 143.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 108.0pt;" width="239">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">自然人借款人（企业主）资料<br /> （1）借款人及其配偶有效身份证件<br /> （2）借款人婚姻状况证明（已婚须提供结婚证，离婚的提供离婚证，未婚仅须在贷款申请表上签署声明）<br /> （3）借款人征信查询授权书（电子原件或纸质原件）<br /> （4）借款人配偶征信查询授权书（如需，电子原件或纸质原件）<br /> 2.企业资料<br /> （1）营业执照（原件影像或复印件）<br /> （2）企业征信查询授权书（电子原件或纸质原件）<br /> 3.建设银行认为必要的其他材料</span></p>
+</td>
+<td style="width: 58.55pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 108.0pt;" width="98">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">1.</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">业务申请贷款申报 2.贷款审批&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.合同签订&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.贷款发放</span></p>
+</td>
+<td style="width: 81.8pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 108.0pt;" width="136">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">5</span><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">个工作日（期间需退回补充材料后再次申报审批的，自重新提交申请材料之日起重新计算时限）</span></p>
+</td>
+<td style="width: 58.35pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0cm 5.4pt 0cm 5.4pt; height: 108.0pt;" width="97">
+<p style="text-align: left;"><span style="font-size: 10.0pt; font-family: '方正仿宋简体','serif'; color: black;">评分卡</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin-left: -35.4pt;">&nbsp;</p>
+	
+			<p>
+	<dl class="annex_download">
+            <dt>附件下载：</dt>
+             
+				  <dd><a href ="/gx/cn/fhgg/upload//20220429_1651200533/20220429105355419288.xlsx" title="中国建设银行广西区分行授权清单">中国建设银行广西区分行授权清单</a></dd>
+			 
+				  <dd><a href ="/gx/cn/fhgg/upload//20220429_1651200533/20220429105427758206.xlsx" title="中国建设银行广西区分行授信清单">中国建设银行广西区分行授信清单</a></dd>
+			
+    </dl>
+	</p>
+		</div>
+	</div>
+	<!--w_660 end-->
+	<!--w_219-->
+   
+	<div class="w_219 rfloat">
+		
+<!--打印、分享、字体开始-->
+<div class="area">
+  <a class="print" href="javascript:print()"><img src="/cn/v3/images/dayin.png">打印</a>
+ 
+	<a title="" class="share list_share" href="javascript:;"><img src="/cn/v3/images/20151203162823902954.png ">分享<img src="/cn/v3/images/down.png"></a>
+					<div id="share" class="list_share">
+<div class="share_box">
+	<ul class="bshare-custom icon-medium">
+	<li><a title="分享到QQ空间" class="bshare-qzone"  href="javascript:window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary='+encodeURIComponent(document.getElementsByTagName('h2')[0].innerHTML)+'&url='+encodeURIComponent(location.href),'favit','');void(0)">QQ空间</a></li>
+	<li><a title="分享到新浪微博" class="bshare-sinaminiblog" href="javascript:window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.getElementsByTagName('h2')[0].innerHTML)+'&url='+encodeURIComponent(location.href)+'&content=utf-8&sourceUrl='+encodeURIComponent(location.href),'favit','');void(0)">新浪微博</a></li>
+	<li><a title="分享到腾讯微博" class="bshare-qqim" href="javascript:window.open('http://v.t.qq.com/share/share.php?title='+encodeURIComponent(document.getElementsByTagName('h2').innerHTML)+'&url='+encodeURIComponent(location.href),'favit','');void(0)">腾讯微博</a></li>
+	<li><a title="分享到豆瓣" class="bshare-douban" href="javascript:window.open('http://www.douban.com/recommend/?title='+encodeURIComponent(document.getElementsByTagName('h2').innerHTML)+'&url='+encodeURIComponent(location.href),'favit','');void(0)">豆瓣网</a></li>
+											
+										</ul>
+									
+										</div></div>			
+						
+  
+  
+</div>
+<div class="area">
+<div id="slider-range-min" style="margin:30px 0 10px 40px;">
+                
+</div>
+</div>
+<div class="area">	
+<div class="demo-description clearfix" style="padding:0;">
+字体：								<a class="small_w"  style=" color:#333;">小</a>
+        <a class="mid_w" style="margin-left:52px; color:#333;">中</a>
+      <a class="big_w" style=" margin-left:50px; color:#333;">大</a>
+</div>
+            </div>
+<!--打印、分享、字体结束-->
+		
+	</div>
+</div>
+
+  <!--w_219 end-->
+
+<div class="clear m_bottom_40"></div> 
+<div class="footer">
+  <!--footer link-->
+  
+
+   <!--底栏上面可跳转部分-->   
+  
+
+
+
+
+   
+<div class="footer_links">
+	<div class="footer_link_main">
+		<div class="footerr_links_img">
+			<a href="javascript:;" ><img width="94px" src="http://image3.ccb.com/cn/home/v3/images/footer_wza.png"></a>
+		</div>
+		<div class="footerr_links_img">
+			<a url="https://ss.knet.cn/verifyseal.dll?sn=e17090611010268808kqyr000000&pa=111332" href="javascript:;" onClick="fun2(2)" class="url2">
+			<img width="94px" src="http://image3.ccb.com/cn/home/v3/images/ss.png"></a>
+		</div>
+		<ul>
+		<li><a href="http://www.ccb.com/cn/home/map/branchSearch.html" target="_blank">网点及ATM</a></li><li><a href="http://www.ccb.com/cn/home/equityProtect/equityProtect.html" target="_blank">消费者权益保护</a></li><li><a href="http://www.ccb.com/cn/public/20141027_1414371456.html" target="_blank">服务价目表</a></li><li><a href="http://job.ccb.com" target="_blank">诚聘英才</a></li><li><a href="http://www.ccb.com/cn/v3/head_content/sitemap.html" target="_blank">网站地图</a></li><li><a href="http://www.ccb.com/cn/v3/head_content/sitedeclare.html" target="_blank">网站声明</a></li><li><a href="javascript:window.open('ht'+'tp://yun.ccb.com/')" target="_blank">建行云</a></li><li><a href="http://www.ccb.com/cn/v3/head_content/friendlink.html" target="_blank">友情链接 </a></li>
+		</ul>
+		<div class="Language_select">
+			<a class="big5" href="https://www.ccb.com/chn/big5/index.html">繁体</a>/   
+			<a href="http://en.ccb.com/eng/home/index.shtml">ENGLISH</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+<!--	<script>
+		$(".Language_select .big5").attr("href", "http://fjt.ccb.com/gate/big5/" + location.href.replace(/https?:\/\//, ""))
+	</script>
+-->
+</div>
+
+    <div class="fs_btan">
+       <div class="fs_tan" style="min-height: 190px;">
+			<div style="color:#fff;background:#0066b3;text-align:center;line-height:48px;font-size:18px;">
+				温馨提示
+				<span class="cha2 close"></span>
+			</div>
+			<p id="tit">检测你正在离开建设银行网站前往第三方网站</p>
+                        <p class="netName"></p>
+			<div class="confirm">
+				<div class="btn" id="confirm" style="background:#0066b3;">确定</div>	
+                 <div class="btn" id="cancel" style="background:#3DA4F1;">取消</div>				
+			</div>
+       </div>
+   </div> 
+   
+   <script>
+        var url=""
+        function fun2(n){
+            
+            if(n==1){
+                url = $(".url1").attr("url"); 
+                $(".netName").text("诚信网站")
+            }else{
+                url = $(".url2").attr("url"); 
+                $(".netName").text("可信网站")   
+            }
+	        $(".fs_btan").show();
+	    }
+        function banquan_fun(){
+            $(".netName").text("工业和信息化部政务服务平台")
+            url=$(".yourecord_numb").attr("url");
+            $(".fs_btan").show();
+        }
+	    $(function(){
+		    $(".section").on("click",".friendlink li a",function(){
+			   url = $(this).attr("url");
+			   $(".netName").text($(this).text());
+			   $(".fs_btan").show();
+			})
+			$("#cancel").click(function(){
+		        $(".fs_btan").hide();				
+			});
+			$("#confirm").click(function(){
+			      $(".fs_btan").hide();
+				  location.href = url;
+			});
+		})
+    </script>
+	
+<style>
+.fs_btan {
+    display: none;
+    z-index: 999999;
+    background: url(/cn/counselor/v3/images/opacity_bg1.png);
+    background: rgba(0,0,0,0.3);       
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.fs_tan {
+    width: 360px;
+    /*height: 230px;*/
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin-top: -115px;
+    margin-left: -200px;
+    position: relative;
+}
+.fs_tan  p{padding:0 24px;}
+.netName{margin-bottom:20px;} 
+#tit{
+    margin-top: 20px;
+}
+
+.fs_tan>.title {
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background: #007Fff;
+}
+.fs_btan .confirm > .btn {
+    padding: 0 30px;
+    display: inline-block;
+	color:#fff;
+    margin: 0 15px;   
+    border-radius: 6px; 
+}
+.fs_tan>.content {
+    padding: 20px;
+    text-align: left;
+}
+.content {
+    line-height: 2.0;
+}
+.fs_tan .confirm {
+    display: inline-block;
+    line-height: 32px;
+    height: 32px;
+    color: #fff;
+    border-radius: 4px;   
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.fs_tan .cancel {
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 4px;
+    background: #0066B3;
+    cursor: pointer;
+    margin: 15px auto;
+    text-align: center;
+}
+.footer_links .fs_tan p {
+    line-height: 40px;
+    font-size: 16px;
+}
+</style>
+
+
+
+</html>
+
+
+
+
+  <!--footer right-->
+  
+
+   <!--底栏下面不可跳转部分--> 
+  
+
+
+
+
+   		
+	<div class="copy-right">
+		<div class="copy-right_main">
+		  <div class="copy-right_left">
+			<div class="copy-right_img"><img src="//image3.ccb.com/cn/home/v3/images/copy_right_img.gif"></div>
+			<div class="copy-right_text">
+			  <span>本网站支持IPv6</span><br />
+			 <span>© 版权所有中国建设银行</span><span>
+			 <a url="https://beian.miit.gov.cn/" href="https://beian.miit.gov.cn" target="_blank" class="yourecord_numb" style="color:#fff;">京ICP备13030780号-1</a></span> 
+			 <span> 京公网安备：110102000450</span> <br />
+			  <span>总行地址：中国北京西城区金融大街25号</span> <span>邮编：100033</span><br />
+			  <span>手机网站：m.ccb.com</span><span>客服与投诉热线：95533</span>
+			</div>
+			</div>
+			<div class="copy-right_right">
+				<ul>
+				  <li><img src="//image3.ccb.com/cn/home/include/20151206_1449376288/wb.382411751461452652833.jpg">官方微博</li>
+				  <li><img src="//image4.ccb.com/cn/home/include/20151206_1449376288/weixin.382411751461452652852.jpg">微信银行</li>
+				  <li><img src="//image3.ccb.com/cn/home/include/20151206_1449376288/sj.jpg">手机银行</li>
+				</ul>
+			</div>
+		  <div class="clear"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/cn/v3/head_content/quest.js"></script>
+	<div class="quick_operate" style="display: block;">
+		<ul>
+			<li><a class="to_top" href="#none"></a></li>
+		</ul>
+	</div>
+	
+
+
+
+  <script src="/cn/v3/include/empty/foot_html.js" type="text/javascript" charset="utf-8"></script> 
+
+
+</div>
+</body>
+</html>
+

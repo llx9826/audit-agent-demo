@@ -1,0 +1,5 @@
+{"id":"EX-LOW-CONFIDENCE","exception_type":"MATERIAL_IMAGE_LOW_CONFIDENCE","expected_tools":["ocr_retry","vlm_extract","document_search"]}
+{"id":"EX-TYPE","exception_type":"MATERIAL_TYPE_AMBIGUOUS","expected_tools":["vlm_extract","document_search","neighbor_page_search"]}
+{"id":"EX-OWNER","exception_type":"OWNER_ASSIGNMENT_AMBIGUOUS","expected_tools":["vlm_extract","document_search"]}
+{"id":"EX-PAGE","exception_type":"PAGE_MISSING_OR_DUPLICATE","expected_tools":["page_integrity_check","document_reload"]}
+{"id":"EX-TOOL-FAILURE","exception_type":"TOOL_FAILURE","expected_tools":["document_reload"]}

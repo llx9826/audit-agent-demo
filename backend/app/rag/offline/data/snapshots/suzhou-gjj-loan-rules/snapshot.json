@@ -1,0 +1,17 @@
+{
+  "byte_count": 94666,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:20:22.843931+00:00",
+  "jurisdiction": "苏州",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "苏州市人民政府",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "d6c0e6f343a9e8e4d3ca824c6143ebe0d61681983654623420ec39191bfcd53f",
+  "source_id": "suzhou-gjj-loan-rules",
+  "source_version": "2024-01",
+  "status": "ACTIVE",
+  "title": "苏州市住房公积金个人住房贷款管理细则",
+  "url": "https://www.suzhou.gov.cn/szsrmzf/gbzfgfxwj/202505/47ef0fc4489342c393f9f6bd50feb7df.shtml"
+}

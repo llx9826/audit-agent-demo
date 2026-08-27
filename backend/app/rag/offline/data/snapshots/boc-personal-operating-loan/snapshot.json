@@ -1,0 +1,17 @@
+{
+  "byte_count": 27741,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:19:04.138530+00:00",
+  "jurisdiction": "全国",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "个人经营抵押贷款",
+  "publisher": "中国银行",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "e51cc08bd6fb9f079d4828e279daa6b92c336aff70f9426d920a713bffb519ef",
+  "source_id": "boc-personal-operating-loan",
+  "source_version": "public-page-2026-08-16",
+  "status": "ACTIVE",
+  "title": "中国银行个人经营贷款办理所需材料",
+  "url": "https://www.boc.cn/pbservice/pb2/200806/t20080625_719.html"
+}

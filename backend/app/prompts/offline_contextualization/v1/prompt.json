@@ -1,0 +1,6 @@
+{
+  "prompt_id": "rag.offline.contextual-retrieval",
+  "version": "1.0.0",
+  "system_file": "system.txt",
+  "user_template_file": "user.txt"
+}

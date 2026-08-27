@@ -1,0 +1,17 @@
+{
+  "byte_count": 139438,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:20:31.326042+00:00",
+  "jurisdiction": "天津",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "天津市住房和城乡建设委员会",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "f916177025c3bc1c160d19748771cb69c29d52459297cdeb4c291b95f1f22b9f",
+  "source_id": "tianjin-gjj-one-stop-materials",
+  "source_version": "2025-03-10",
+  "status": "ACTIVE",
+  "title": "天津住房公积金个人住房贷款购房一件事申请材料",
+  "url": "https://www.tj.gov.cn/zmhd/WDK/BSWD/202503/t20250310_6877833.html"
+}

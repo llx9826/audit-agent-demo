@@ -1,6 +1,7 @@
 fastapi>=0.116,<1
 uvicorn[standard]>=0.35,<1
 pydantic>=2.11,<3
+python-dotenv>=1,<2
 langgraph>=0.6,<1
 langgraph-checkpoint-sqlite>=2.0,<3
 rank-bm25>=0.2.2,<1

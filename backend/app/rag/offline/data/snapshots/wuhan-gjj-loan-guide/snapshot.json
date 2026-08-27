@@ -1,0 +1,17 @@
+{
+  "byte_count": 44769,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:20:20.005411+00:00",
+  "jurisdiction": "武汉",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "武汉住房公积金管理中心",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "99225c54bf8ee8c4c40fd2bc2f1f8c4be01aa2f8f445b740e39e1045c00728eb",
+  "source_id": "wuhan-gjj-loan-guide",
+  "source_version": "2026-04-24",
+  "status": "ACTIVE",
+  "title": "武汉住房公积金贷款指南",
+  "url": "https://gjj.wuhan.gov.cn/bsfw/ywzl/ywzn/dkyw/202412/t20241219_2504837.html"
+}

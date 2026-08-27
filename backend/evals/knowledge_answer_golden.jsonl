@@ -1,0 +1,5 @@
+{"id":"KB-ANS-NJ-MARRIAGE","question":"南京公积金贷款，离婚需要什么婚姻证明？有依据吗？","expected_status":"ANSWERED","required_requirement_ids":["KB-NJ-MARRIAGE-STATUS"],"failure_mode":"citation_and_faithfulness","source":"official_nanjing_snapshot"}
+{"id":"KB-ANS-BJ-ECERT","question":"北京公积金贷款婚姻电子证照可以免交纸质件吗？请给依据。","expected_status":"ANSWERED","required_requirement_ids":["KB-BJ-E-CERTIFICATE"],"failure_mode":"citation_and_faithfulness","source":"official_beijing_snapshot"}
+{"id":"KB-ANS-GX-PROPERTY","question":"广西建行个人经营抵押贷款需要什么房产权属材料？","expected_status":"ANSWERED","required_requirement_ids":["KB-CCB-GX-PROPERTY"],"failure_mode":"metadata_filter_and_citation","source":"official_ccb_guangxi_snapshot"}
+{"id":"KB-REFUSE-NO-EVIDENCE","question":"北京个人经营抵押贷款需要提交哪些婚姻材料？","expected_status":"INSUFFICIENT_EVIDENCE","required_requirement_ids":[],"failure_mode":"no_evidence_refusal","source":"known_corpus_gap"}
+{"id":"KB-REFUSE-SCOPE","question":"根据这些材料判断这笔贷款能不能审批通过？","expected_status":"REFUSE","required_requirement_ids":[],"failure_mode":"scope_refusal","source":"scope_guardrail"}

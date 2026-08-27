@@ -1,40 +1,57 @@
 import unittest
 
-from app.domain.models import AuditResult
+from app.domain.models import AuditResult, RequiredMaterialTask
 from app.planning.planner import build_plan, impacted_task_ids, selective_replan
 
 
+REQUIREMENTS = [
+    {"requirement_id": "REQ-BORROWER-ID", "person_role": "BORROWER", "material_type": "identity_document"},
+    {"requirement_id": "REQ-SPOUSE-CONSENT", "person_role": "SPOUSE", "material_type": "spouse_consent"},
+]
+PERSONS = [
+    {"person_id": "P01", "roles": ["BORROWER"]},
+    {"person_id": "P02", "roles": ["SPOUSE", "MORTGAGOR"]},
+]
+
+
 class PlanningTests(unittest.TestCase):
-    def test_dynamic_plan_adds_spouse_tasks(self):
-        self.assertEqual([task.task_id for task in build_plan("SPOUSE")][-2:], ["T06", "T07"])
-
-    def test_dependency_impact_is_selective(self):
-        tasks = build_plan()
-        self.assertEqual(impacted_task_ids(tasks, ["relation"]), ["T05"])
-
-    def test_result_is_invalidated_but_unaffected_result_kept(self):
-        tasks = build_plan()
-        tasks[0].result = AuditResult("T01", "PASS", "ok", 1.0, [], [], 1, 1)
-        tasks[0].status = "SUCCESS"
-        tasks[4].result = AuditResult("T05", "PASS", "old", 1.0, [], [], 1, 1)
-        tasks[4].status = "SUCCESS"
-        revised = selective_replan(tasks, ["relation"], "SPOUSE")
-        by_id = {task.task_id: task for task in revised}
-        self.assertEqual(by_id["T01"].status, "SUCCESS")
-        self.assertEqual(by_id["T05"].status, "INVALIDATED")
-        self.assertIn("T06", by_id)
-
-    def test_supplement_resolves_document_task_without_reexecuting_it(self):
-        tasks = build_plan()
-        tasks[3].result = AuditResult("T04", "PASS", "resolved by supplement", 1.0, ["E-DOC"], [], 2, 1)
-        tasks[3].status = "SUCCESS"
-        revised = selective_replan(
-            tasks, ["marriage_documents", "relation"], "SPOUSE", resolved_task_ids={"T04"},
+    def test_requirement_person_pairs_compile_deterministically(self):
+        tasks = build_plan(REQUIREMENTS, PERSONS)
+        self.assertEqual(
+            [task.task_id for task in tasks],
+            ["TASK-BORROWER-ID-P01", "TASK-SPOUSE-CONSENT-P02"],
         )
-        by_id = {task.task_id: task for task in revised}
-        self.assertEqual(by_id["T03"].status, "DIRTY")
-        self.assertEqual(by_id["T04"].status, "SUCCESS")
-        self.assertEqual(by_id["T04"].result.conclusion, "resolved by supplement")
+        self.assertEqual(tasks[1].depends_on[-1], "material:spouse_consent")
+        self.assertEqual(tasks[1].task_dependencies, [])
+        self.assertEqual(
+            tasks[1].conflict_keys,
+            ["material_slot:P02:spouse_consent"],
+        )
+
+    def test_changed_material_only_impacts_dependent_task(self):
+        tasks = build_plan(REQUIREMENTS, PERSONS)
+        self.assertEqual(
+            impacted_task_ids(tasks, ["material:spouse_consent"]),
+            ["TASK-SPOUSE-CONSENT-P02"],
+        )
+
+    def test_page_change_impacts_task_that_previously_matched_page(self):
+        tasks = build_plan(REQUIREMENTS, PERSONS)
+        tasks[0].matched_page_ids = ["PAGE-001"]
+        self.assertEqual(impacted_task_ids(tasks, ["page:PAGE-001"]), ["TASK-BORROWER-ID-P01"])
+
+    def test_selective_replan_reuses_unaffected_result(self):
+        tasks = build_plan(REQUIREMENTS, PERSONS)
+        tasks[0].status = "MATCHED"
+        tasks[0].result = AuditResult(
+            tasks[0].task_id, "PASS", "matched", .99, ["EV-1"], ["REQ-BORROWER-ID"], 1, 1,
+        )
+        tasks[1].status = "MISSING"
+        revised = selective_replan(tasks, ["material:spouse_consent"])
+        by_id: dict[str, RequiredMaterialTask] = {task.task_id: task for task in revised}
+        self.assertEqual(by_id["TASK-BORROWER-ID-P01"].status, "MATCHED")
+        self.assertEqual(by_id["TASK-BORROWER-ID-P01"].result.conclusion, "matched")
+        self.assertEqual(by_id["TASK-SPOUSE-CONSENT-P02"].status, "DIRTY")
 
 
 if __name__ == "__main__":

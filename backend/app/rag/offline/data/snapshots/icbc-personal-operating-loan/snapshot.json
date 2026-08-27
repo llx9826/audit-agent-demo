@@ -1,0 +1,17 @@
+{
+  "byte_count": 5043,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:19:05.599878+00:00",
+  "jurisdiction": "全国",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "个人经营抵押贷款",
+  "publisher": "中国工商银行",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "1cebd69a94c0494ba634913559fa84577c36f1b1aec9bf4b92e71c70026c3cd3",
+  "source_id": "icbc-personal-operating-loan",
+  "source_version": "public-page-2026-08-16",
+  "status": "ACTIVE",
+  "title": "中国工商银行个人经营贷款申请资料",
+  "url": "https://www.icbc.com.cn/page/721852516299210795.html"
+}

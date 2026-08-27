@@ -1,0 +1,17 @@
+{
+  "byte_count": 56979,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:20:57.167331+00:00",
+  "jurisdiction": "陕西",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "陕西省住房和城乡建设厅",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "d97bea2f6d37fbdeb13daffce2df2cd7c549f1760005519d9f64f4aefd644585",
+  "source_id": "shaanxi-gjj-loan-guide",
+  "source_version": "2016-07-14",
+  "status": "ACTIVE",
+  "title": "陕西省住房公积金个人住房贷款办理指引",
+  "url": "https://js.shaanxi.gov.cn/sy/zjzx/ztzl/gxzt/zfgjj/201607/t20160714_2833818.html"
+}

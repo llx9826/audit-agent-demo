@@ -1,0 +1,17 @@
+{
+  "byte_count": 70064,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:20:06.292974+00:00",
+  "jurisdiction": "深圳",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "深圳市住房和建设局",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "c5aedf816f550f607714f0ba60ce42b61dca175d7d6da195973d3017fffb2e25",
+  "source_id": "shenzhen-gjj-loan-guide",
+  "source_version": "public-page-2026-08-16",
+  "status": "ACTIVE",
+  "title": "深圳住房公积金贷款办理材料",
+  "url": "https://zjj.sz.gov.cn/xxgk/ztzl/gjjdk/mindex.html"
+}

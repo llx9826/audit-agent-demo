@@ -1,0 +1,9 @@
+<document_metadata>
+  <title>{document_title}</title>
+  <publisher>{publisher}</publisher>
+  <product>{product}</product>
+  <jurisdiction>{jurisdiction}</jurisdiction>
+</document_metadata>
+<section>{section}</section>
+<parent_section>{parent_text}</parent_section>
+<chunk>{chunk}</chunk>

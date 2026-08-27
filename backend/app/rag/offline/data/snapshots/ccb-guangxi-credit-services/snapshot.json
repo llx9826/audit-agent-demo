@@ -1,0 +1,17 @@
+{
+  "byte_count": 109781,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:19:07.233778+00:00",
+  "jurisdiction": "广西",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "个人经营抵押贷款",
+  "publisher": "中国建设银行广西区分行",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "0a7cacb688b60a7db5a62918d923cd932a228ec062fe682937b6e369a02b0de4",
+  "source_id": "ccb-guangxi-credit-services",
+  "source_version": "public-page-2026-08-16",
+  "status": "ACTIVE",
+  "title": "建设银行广西分行个人经营性贷款申请资料",
+  "url": "https://szjf.ccb.com/gx/cn/fhgg/20220429_1651200533.html"
+}

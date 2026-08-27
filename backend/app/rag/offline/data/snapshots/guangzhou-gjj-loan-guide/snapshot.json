@@ -1,0 +1,17 @@
+{
+  "byte_count": 127514,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:20:02.710608+00:00",
+  "jurisdiction": "广州",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "广州住房公积金管理中心",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "c9655882a243a0aad907a80fc0b0ab32989b2b111c483753d4f842c129ce0fd8",
+  "source_id": "guangzhou-gjj-loan-guide",
+  "source_version": "public-page-2026-08-16",
+  "status": "ACTIVE",
+  "title": "广州住房公积金贷款服务指南",
+  "url": "https://gjj.gz.gov.cn/bsfw/qtfw/content/post_5748060.html"
+}

@@ -1,0 +1,2298 @@
+{
+  "case_count": 19,
+  "case_metrics": {
+    "association/ASSOC-CROSS-PAGE-001": {
+      "passed": 1.0
+    },
+    "association/ASSOC-OWNER-HITL-001": {
+      "passed": 1.0
+    },
+    "association/ASSOC-ROLE-OBS-001": {
+      "passed": 1.0
+    },
+    "association/ASSOC-UNIQUE-001": {
+      "passed": 1.0
+    },
+    "material/AUDIT-BUNDLE": {
+      "passed": 1.0
+    },
+    "material/AUDIT-OWNER": {
+      "passed": 1.0
+    },
+    "material/AUDIT-REQUIREMENT": {
+      "passed": 1.0
+    },
+    "material/AUDIT-TYPE": {
+      "passed": 1.0
+    },
+    "smoke/exception-completion-condition": {
+      "passed": 1.0
+    },
+    "smoke/exception-resolved": {
+      "passed": 1.0
+    },
+    "smoke/exception-tool-sequence": {
+      "passed": 1.0
+    },
+    "smoke/exception-tools-gated": {
+      "passed": 1.0
+    },
+    "smoke/material-closed-candidate-set": {
+      "passed": 1.0
+    },
+    "tool-policy/EX-LOW-CONFIDENCE": {
+      "passed": 1.0
+    },
+    "tool-policy/EX-OWNER": {
+      "passed": 1.0
+    },
+    "tool-policy/EX-PAGE": {
+      "passed": 1.0
+    },
+    "tool-policy/EX-TOOL-FAILURE": {
+      "passed": 1.0
+    },
+    "tool-policy/EX-TYPE": {
+      "passed": 1.0
+    },
+    "workflow/final-db-outcome": {
+      "passed": 1.0
+    }
+  },
+  "dataset": [
+    "material_audit_golden.jsonl",
+    "case_association_golden.jsonl",
+    "exception_candidate_golden.jsonl",
+    "workflow/final-db-outcome"
+  ],
+  "floor_failures": [],
+  "metrics": {
+    "outcome_stability": 1.0,
+    "passed": 1.0,
+    "strict_case_pass_rate": 1.0
+  },
+  "outcome_stability": {
+    "association/ASSOC-CROSS-PAGE-001": 1.0,
+    "association/ASSOC-OWNER-HITL-001": 1.0,
+    "association/ASSOC-ROLE-OBS-001": 1.0,
+    "association/ASSOC-UNIQUE-001": 1.0,
+    "material/AUDIT-BUNDLE": 1.0,
+    "material/AUDIT-OWNER": 1.0,
+    "material/AUDIT-REQUIREMENT": 1.0,
+    "material/AUDIT-TYPE": 1.0,
+    "smoke/exception-completion-condition": 1.0,
+    "smoke/exception-resolved": 1.0,
+    "smoke/exception-tool-sequence": 1.0,
+    "smoke/exception-tools-gated": 1.0,
+    "smoke/material-closed-candidate-set": 1.0,
+    "tool-policy/EX-LOW-CONFIDENCE": 1.0,
+    "tool-policy/EX-OWNER": 1.0,
+    "tool-policy/EX-PAGE": 1.0,
+    "tool-policy/EX-TOOL-FAILURE": 1.0,
+    "tool-policy/EX-TYPE": 1.0,
+    "workflow/final-db-outcome": 1.0
+  },
+  "passed": true,
+  "quality_floor": {
+    "outcome_stability": 1.0,
+    "passed": 1.0,
+    "strict_case_pass_rate": 1.0
+  },
+  "regression": null,
+  "shadow_replay": null,
+  "strict_case_pass": {
+    "association/ASSOC-CROSS-PAGE-001": 1.0,
+    "association/ASSOC-OWNER-HITL-001": 1.0,
+    "association/ASSOC-ROLE-OBS-001": 1.0,
+    "association/ASSOC-UNIQUE-001": 1.0,
+    "material/AUDIT-BUNDLE": 1.0,
+    "material/AUDIT-OWNER": 1.0,
+    "material/AUDIT-REQUIREMENT": 1.0,
+    "material/AUDIT-TYPE": 1.0,
+    "smoke/exception-completion-condition": 1.0,
+    "smoke/exception-resolved": 1.0,
+    "smoke/exception-tool-sequence": 1.0,
+    "smoke/exception-tools-gated": 1.0,
+    "smoke/material-closed-candidate-set": 1.0,
+    "tool-policy/EX-LOW-CONFIDENCE": 1.0,
+    "tool-policy/EX-OWNER": 1.0,
+    "tool-policy/EX-PAGE": 1.0,
+    "tool-policy/EX-TOOL-FAILURE": 1.0,
+    "tool-policy/EX-TYPE": 1.0,
+    "workflow/final-db-outcome": 1.0
+  },
+  "trial_count": 57,
+  "trials": [
+    {
+      "case_id": "smoke/exception-resolved",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-tool-sequence",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-tools-gated",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-completion-condition",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/material-closed-candidate-set",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-EVAL"
+        ],
+        "rationale_summary": "两个所属人候选均有页面证据，需要人工确认后才能写回。",
+        "reason_code": "OWNER_EVIDENCE_AMBIGUOUS",
+        "requires_human": true,
+        "selected_candidate_id": "C-P02"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "selected_candidate_id": "C-P02"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-OWNER",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "rationale_summary": "两个所属人候选均有页面证据，需要人工确认后才能写回。",
+        "reason_code": "OWNER_EVIDENCE_AMBIGUOUS",
+        "requires_human": true,
+        "selected_candidate_id": "AUDIT-OWNER-C1"
+      },
+      "metadata": {
+        "failure_mode": "OWNER_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "closed_candidate_set": true,
+          "selected_candidate_id": "AUDIT-OWNER-C1"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-TYPE",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "TYPE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "TYPE_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-BUNDLE",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "BUNDLE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "BUNDLE_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-REQUIREMENT",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "REQUIREMENT_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "REQUIREMENT_MATCH_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-LOW-CONFIDENCE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "ocr_retry",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "ocr_retry",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:MATERIAL_IMAGE_LOW_CONFIDENCE"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-TYPE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "neighbor_page_search",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "neighbor_page_search",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:MATERIAL_TYPE_AMBIGUOUS"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-OWNER",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:OWNER_ASSIGNMENT_AMBIGUOUS"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-PAGE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_reload",
+          "page_integrity_check"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_reload",
+            "page_integrity_check"
+          ],
+          "intent": "EXCEPTION:PAGE_MISSING_OR_DUPLICATE"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-TOOL-FAILURE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_reload"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_reload"
+          ],
+          "intent": "EXCEPTION:TOOL_FAILURE"
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-UNIQUE-001",
+      "final_db_outcome": {
+        "action": "APPLY_CANDIDATES",
+        "confidence": 0.97,
+        "evidence_refs": [
+          "EV-ID-1",
+          "EV-APP-1"
+        ],
+        "rationale_summary": "候选均绑定页级证据，可交由 Association Gate 校验并写入。",
+        "reason_code": "EVIDENCE_BACKED_CANDIDATES",
+        "requires_human": false,
+        "selected_candidate_ids": [
+          "PERSON-P01",
+          "ROLE-P01-BORROWER"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "APPLY_CANDIDATES",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-ROLE-OBS-001",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.64,
+        "evidence_refs": [
+          "EV-ID-1"
+        ],
+        "exception_type": "ROLE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "MORTGAGE_CONTRACT_ROLE"
+        ],
+        "rationale_summary": "角色候选缺少独立材料观察，需要先恢复证据。",
+        "reason_code": "ROLE_EVIDENCE_INSUFFICIENT",
+        "requires_human": false,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-CROSS-PAGE-001",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-A",
+          "EV-B"
+        ],
+        "exception_type": "CROSS_PAGE_EVIDENCE_CONFLICT",
+        "missing_observations": [
+          "INDEPENDENT_IDENTITY_OBSERVATION"
+        ],
+        "rationale_summary": "跨页身份信号冲突，需要独立材料观察。",
+        "reason_code": "CROSS_PAGE_EVIDENCE_CONFLICT",
+        "requires_human": false,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-OWNER-HITL-001",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.51,
+        "evidence_refs": [
+          "EV-M-1",
+          "EV-M-2"
+        ],
+        "rationale_summary": "机器恢复已耗尽，候选仍不能唯一确认。",
+        "reason_code": "ASSOCIATION_RECOVERY_EXHAUSTED",
+        "requires_human": true,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "workflow/final-db-outcome",
+      "final_db_outcome": {
+        "case_id": "CASE-ZD-042",
+        "case_version": 4,
+        "completeness_status": "COMPLETE",
+        "credit_decision": "OUT_OF_SCOPE",
+        "human_task_count": 1,
+        "plan_version": 4,
+        "status": "COMPLETED",
+        "supplement_count": 1,
+        "task_statuses": {
+          "TASK-BORROWER-ID-P01": "MATCHED",
+          "TASK-BUSINESS-LICENSE-P03": "MATCHED",
+          "TASK-MORTGAGOR-ID-P02": "MATCHED",
+          "TASK-MORTGAGOR-PROPERTY-P02": "MATCHED",
+          "TASK-SPOUSE-CONSENT-P02": "MATCHED",
+          "TASK-SPOUSE-ID-P02": "MATCHED",
+          "TASK-SPOUSE-MARRIAGE-P02": "MATCHED"
+        },
+        "terminal_event": "RUN_COMPLETED",
+        "terminal_seq": 334,
+        "validation_result": "MATERIALS_COMPLETE"
+      },
+      "metadata": {
+        "candidate_impression_count": 1,
+        "hard_case_count": 1,
+        "human_feedback_count": 2,
+        "outcome_scores": {
+          "credit_scope_safe": 1.0,
+          "db_outcome_correct": 1.0,
+          "passed": 1.0,
+          "task_completion": 1.0
+        },
+        "persistence_check": "SQLITE_REOPENED_AFTER_SERVICE_CLOSE"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 205,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 206,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 207,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BUILD_CLOSED_CANDIDATE_SET",
+          "actor": "workflow",
+          "event_type": "AUDIT_CANDIDATES_BUILT",
+          "node": "material_agent_review",
+          "seq": 215,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "REQUEST_HUMAN",
+          "actor": "audit_agent",
+          "event_type": "AUDIT_DECISION_PROPOSED",
+          "node": "material_agent_review",
+          "seq": 217,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "VALIDATE_BOUNDED_PROPOSAL",
+          "actor": "plan_gate",
+          "event_type": "AUDIT_PLAN_GATE_EVALUATED",
+          "node": "audit_plan_gate",
+          "seq": 218,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 226,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "CONFIRM_OWNER",
+          "actor": "human",
+          "event_type": "HUMAN_DECISION_APPLIED",
+          "node": "apply_human_command",
+          "seq": 227,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 230,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 240,
+          "task_id": null
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 267,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "REQUEST_SUPPLEMENT",
+          "actor": "human",
+          "event_type": "HUMAN_DECISION_APPLIED",
+          "node": "apply_human_command",
+          "seq": 268,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 271,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 281,
+          "task_id": null
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 301,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 305,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 315,
+          "task_id": null
+        },
+        {
+          "action": "VERIFY_ALL_REQUIRED_MATERIAL_TASKS",
+          "actor": "validator",
+          "event_type": "COMPLETENESS_VALIDATED",
+          "node": "final_validator",
+          "seq": 332,
+          "task_id": null
+        },
+        {
+          "action": "RUN_COMPLETED",
+          "actor": "workflow",
+          "event_type": "RUN_COMPLETED",
+          "node": "final_validator",
+          "seq": 334,
+          "task_id": null
+        }
+      ],
+      "trial_index": 1,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-resolved",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-tool-sequence",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-tools-gated",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-completion-condition",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/material-closed-candidate-set",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-EVAL"
+        ],
+        "rationale_summary": "两个所属人候选均有页面证据，需要人工确认后才能写回。",
+        "reason_code": "OWNER_EVIDENCE_AMBIGUOUS",
+        "requires_human": true,
+        "selected_candidate_id": "C-P02"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "selected_candidate_id": "C-P02"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-OWNER",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "rationale_summary": "两个所属人候选均有页面证据，需要人工确认后才能写回。",
+        "reason_code": "OWNER_EVIDENCE_AMBIGUOUS",
+        "requires_human": true,
+        "selected_candidate_id": "AUDIT-OWNER-C1"
+      },
+      "metadata": {
+        "failure_mode": "OWNER_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "closed_candidate_set": true,
+          "selected_candidate_id": "AUDIT-OWNER-C1"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-TYPE",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "TYPE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "TYPE_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-BUNDLE",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "BUNDLE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "BUNDLE_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-REQUIREMENT",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "REQUIREMENT_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "REQUIREMENT_MATCH_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-LOW-CONFIDENCE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "ocr_retry",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "ocr_retry",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:MATERIAL_IMAGE_LOW_CONFIDENCE"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-TYPE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "neighbor_page_search",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "neighbor_page_search",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:MATERIAL_TYPE_AMBIGUOUS"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-OWNER",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:OWNER_ASSIGNMENT_AMBIGUOUS"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-PAGE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_reload",
+          "page_integrity_check"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_reload",
+            "page_integrity_check"
+          ],
+          "intent": "EXCEPTION:PAGE_MISSING_OR_DUPLICATE"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-TOOL-FAILURE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_reload"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_reload"
+          ],
+          "intent": "EXCEPTION:TOOL_FAILURE"
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-UNIQUE-001",
+      "final_db_outcome": {
+        "action": "APPLY_CANDIDATES",
+        "confidence": 0.97,
+        "evidence_refs": [
+          "EV-ID-1",
+          "EV-APP-1"
+        ],
+        "rationale_summary": "候选均绑定页级证据，可交由 Association Gate 校验并写入。",
+        "reason_code": "EVIDENCE_BACKED_CANDIDATES",
+        "requires_human": false,
+        "selected_candidate_ids": [
+          "PERSON-P01",
+          "ROLE-P01-BORROWER"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "APPLY_CANDIDATES",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-ROLE-OBS-001",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.64,
+        "evidence_refs": [
+          "EV-ID-1"
+        ],
+        "exception_type": "ROLE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "MORTGAGE_CONTRACT_ROLE"
+        ],
+        "rationale_summary": "角色候选缺少独立材料观察，需要先恢复证据。",
+        "reason_code": "ROLE_EVIDENCE_INSUFFICIENT",
+        "requires_human": false,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-CROSS-PAGE-001",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-A",
+          "EV-B"
+        ],
+        "exception_type": "CROSS_PAGE_EVIDENCE_CONFLICT",
+        "missing_observations": [
+          "INDEPENDENT_IDENTITY_OBSERVATION"
+        ],
+        "rationale_summary": "跨页身份信号冲突，需要独立材料观察。",
+        "reason_code": "CROSS_PAGE_EVIDENCE_CONFLICT",
+        "requires_human": false,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-OWNER-HITL-001",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.51,
+        "evidence_refs": [
+          "EV-M-1",
+          "EV-M-2"
+        ],
+        "rationale_summary": "机器恢复已耗尽，候选仍不能唯一确认。",
+        "reason_code": "ASSOCIATION_RECOVERY_EXHAUSTED",
+        "requires_human": true,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "workflow/final-db-outcome",
+      "final_db_outcome": {
+        "case_id": "CASE-ZD-042",
+        "case_version": 4,
+        "completeness_status": "COMPLETE",
+        "credit_decision": "OUT_OF_SCOPE",
+        "human_task_count": 1,
+        "plan_version": 4,
+        "status": "COMPLETED",
+        "supplement_count": 1,
+        "task_statuses": {
+          "TASK-BORROWER-ID-P01": "MATCHED",
+          "TASK-BUSINESS-LICENSE-P03": "MATCHED",
+          "TASK-MORTGAGOR-ID-P02": "MATCHED",
+          "TASK-MORTGAGOR-PROPERTY-P02": "MATCHED",
+          "TASK-SPOUSE-CONSENT-P02": "MATCHED",
+          "TASK-SPOUSE-ID-P02": "MATCHED",
+          "TASK-SPOUSE-MARRIAGE-P02": "MATCHED"
+        },
+        "terminal_event": "RUN_COMPLETED",
+        "terminal_seq": 334,
+        "validation_result": "MATERIALS_COMPLETE"
+      },
+      "metadata": {
+        "candidate_impression_count": 1,
+        "hard_case_count": 1,
+        "human_feedback_count": 2,
+        "outcome_scores": {
+          "credit_scope_safe": 1.0,
+          "db_outcome_correct": 1.0,
+          "passed": 1.0,
+          "task_completion": 1.0
+        },
+        "persistence_check": "SQLITE_REOPENED_AFTER_SERVICE_CLOSE"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 205,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 206,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 207,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BUILD_CLOSED_CANDIDATE_SET",
+          "actor": "workflow",
+          "event_type": "AUDIT_CANDIDATES_BUILT",
+          "node": "material_agent_review",
+          "seq": 215,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "REQUEST_HUMAN",
+          "actor": "audit_agent",
+          "event_type": "AUDIT_DECISION_PROPOSED",
+          "node": "material_agent_review",
+          "seq": 217,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "VALIDATE_BOUNDED_PROPOSAL",
+          "actor": "plan_gate",
+          "event_type": "AUDIT_PLAN_GATE_EVALUATED",
+          "node": "audit_plan_gate",
+          "seq": 218,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 226,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "CONFIRM_OWNER",
+          "actor": "human",
+          "event_type": "HUMAN_DECISION_APPLIED",
+          "node": "apply_human_command",
+          "seq": 227,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 230,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 240,
+          "task_id": null
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 267,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "REQUEST_SUPPLEMENT",
+          "actor": "human",
+          "event_type": "HUMAN_DECISION_APPLIED",
+          "node": "apply_human_command",
+          "seq": 268,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 271,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 281,
+          "task_id": null
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 301,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 305,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 315,
+          "task_id": null
+        },
+        {
+          "action": "VERIFY_ALL_REQUIRED_MATERIAL_TASKS",
+          "actor": "validator",
+          "event_type": "COMPLETENESS_VALIDATED",
+          "node": "final_validator",
+          "seq": 332,
+          "task_id": null
+        },
+        {
+          "action": "RUN_COMPLETED",
+          "actor": "workflow",
+          "event_type": "RUN_COMPLETED",
+          "node": "final_validator",
+          "seq": 334,
+          "task_id": null
+        }
+      ],
+      "trial_index": 2,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-resolved",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-tool-sequence",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-tools-gated",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/exception-completion-condition",
+      "final_db_outcome": {
+        "status": "RESOLVED",
+        "stop_reason": "COMPLETION_CONDITION_MET"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 1,
+          "tool": "ocr_retry"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 2,
+          "tool": "vlm_extract"
+        },
+        {
+          "allowed": true,
+          "registered": true,
+          "step": 3,
+          "tool": "document_search"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "smoke/material-closed-candidate-set",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-EVAL"
+        ],
+        "rationale_summary": "两个所属人候选均有页面证据，需要人工确认后才能写回。",
+        "reason_code": "OWNER_EVIDENCE_AMBIGUOUS",
+        "requires_human": true,
+        "selected_candidate_id": "C-P02"
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "selected_candidate_id": "C-P02"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-OWNER",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "rationale_summary": "两个所属人候选均有页面证据，需要人工确认后才能写回。",
+        "reason_code": "OWNER_EVIDENCE_AMBIGUOUS",
+        "requires_human": true,
+        "selected_candidate_id": "AUDIT-OWNER-C1"
+      },
+      "metadata": {
+        "failure_mode": "OWNER_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "closed_candidate_set": true,
+          "selected_candidate_id": "AUDIT-OWNER-C1"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-TYPE",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "TYPE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "TYPE_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-BUNDLE",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "BUNDLE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "BUNDLE_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "material/AUDIT-REQUIREMENT",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-1"
+        ],
+        "exception_type": "REQUIREMENT_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "INDEPENDENT_DISAMBIGUATION_OBSERVATION"
+        ],
+        "rationale_summary": "候选缺少可区分的独立 Observation，需先受控恢复。",
+        "reason_code": "OBSERVATION_REQUIRED",
+        "requires_human": false
+      },
+      "metadata": {
+        "failure_mode": "REQUIREMENT_MATCH_AMBIGUOUS"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "selected_candidate_id": null
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-LOW-CONFIDENCE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "ocr_retry",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "ocr_retry",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:MATERIAL_IMAGE_LOW_CONFIDENCE"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-TYPE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "neighbor_page_search",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "neighbor_page_search",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:MATERIAL_TYPE_AMBIGUOUS"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-OWNER",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_search",
+          "vlm_extract"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_search",
+            "vlm_extract"
+          ],
+          "intent": "EXCEPTION:OWNER_ASSIGNMENT_AMBIGUOUS"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-PAGE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_reload",
+          "page_integrity_check"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_reload",
+            "page_integrity_check"
+          ],
+          "intent": "EXCEPTION:PAGE_MISSING_OR_DUPLICATE"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "tool-policy/EX-TOOL-FAILURE",
+      "final_db_outcome": {
+        "enabled_tools": [
+          "document_reload"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "enabled_tools": [
+            "document_reload"
+          ],
+          "intent": "EXCEPTION:TOOL_FAILURE"
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-UNIQUE-001",
+      "final_db_outcome": {
+        "action": "APPLY_CANDIDATES",
+        "confidence": 0.97,
+        "evidence_refs": [
+          "EV-ID-1",
+          "EV-APP-1"
+        ],
+        "rationale_summary": "候选均绑定页级证据，可交由 Association Gate 校验并写入。",
+        "reason_code": "EVIDENCE_BACKED_CANDIDATES",
+        "requires_human": false,
+        "selected_candidate_ids": [
+          "PERSON-P01",
+          "ROLE-P01-BORROWER"
+        ]
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "APPLY_CANDIDATES",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-ROLE-OBS-001",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.64,
+        "evidence_refs": [
+          "EV-ID-1"
+        ],
+        "exception_type": "ROLE_EVIDENCE_INSUFFICIENT",
+        "missing_observations": [
+          "MORTGAGE_CONTRACT_ROLE"
+        ],
+        "rationale_summary": "角色候选缺少独立材料观察，需要先恢复证据。",
+        "reason_code": "ROLE_EVIDENCE_INSUFFICIENT",
+        "requires_human": false,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-CROSS-PAGE-001",
+      "final_db_outcome": {
+        "action": "REQUEST_RECOVERY",
+        "confidence": 0.72,
+        "evidence_refs": [
+          "EV-A",
+          "EV-B"
+        ],
+        "exception_type": "CROSS_PAGE_EVIDENCE_CONFLICT",
+        "missing_observations": [
+          "INDEPENDENT_IDENTITY_OBSERVATION"
+        ],
+        "rationale_summary": "跨页身份信号冲突，需要独立材料观察。",
+        "reason_code": "CROSS_PAGE_EVIDENCE_CONFLICT",
+        "requires_human": false,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_RECOVERY",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "association/ASSOC-OWNER-HITL-001",
+      "final_db_outcome": {
+        "action": "REQUEST_HUMAN",
+        "confidence": 0.51,
+        "evidence_refs": [
+          "EV-M-1",
+          "EV-M-2"
+        ],
+        "rationale_summary": "机器恢复已耗尽，候选仍不能唯一确认。",
+        "reason_code": "ASSOCIATION_RECOVERY_EXHAUSTED",
+        "requires_human": true,
+        "selected_candidate_ids": []
+      },
+      "metadata": {},
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "REQUEST_HUMAN",
+          "closed_candidate_set": true,
+          "closed_evidence_set": true
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    },
+    {
+      "case_id": "workflow/final-db-outcome",
+      "final_db_outcome": {
+        "case_id": "CASE-ZD-042",
+        "case_version": 4,
+        "completeness_status": "COMPLETE",
+        "credit_decision": "OUT_OF_SCOPE",
+        "human_task_count": 1,
+        "plan_version": 4,
+        "status": "COMPLETED",
+        "supplement_count": 1,
+        "task_statuses": {
+          "TASK-BORROWER-ID-P01": "MATCHED",
+          "TASK-BUSINESS-LICENSE-P03": "MATCHED",
+          "TASK-MORTGAGOR-ID-P02": "MATCHED",
+          "TASK-MORTGAGOR-PROPERTY-P02": "MATCHED",
+          "TASK-SPOUSE-CONSENT-P02": "MATCHED",
+          "TASK-SPOUSE-ID-P02": "MATCHED",
+          "TASK-SPOUSE-MARRIAGE-P02": "MATCHED"
+        },
+        "terminal_event": "RUN_COMPLETED",
+        "terminal_seq": 334,
+        "validation_result": "MATERIALS_COMPLETE"
+      },
+      "metadata": {
+        "candidate_impression_count": 1,
+        "hard_case_count": 1,
+        "human_feedback_count": 2,
+        "outcome_scores": {
+          "credit_scope_safe": 1.0,
+          "db_outcome_correct": 1.0,
+          "passed": 1.0,
+          "task_completion": 1.0
+        },
+        "persistence_check": "SQLITE_REOPENED_AFTER_SERVICE_CLOSE"
+      },
+      "scores": {
+        "passed": 1.0
+      },
+      "trajectory": [
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 205,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 206,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BOUNDED_TOOL_LOOP",
+          "actor": "exception_agent",
+          "event_type": "AGENT_TOOL_FINISHED",
+          "node": "exception_recovery_agent",
+          "seq": 207,
+          "task_id": "TASK-MORTGAGOR-ID-P02"
+        },
+        {
+          "action": "BUILD_CLOSED_CANDIDATE_SET",
+          "actor": "workflow",
+          "event_type": "AUDIT_CANDIDATES_BUILT",
+          "node": "material_agent_review",
+          "seq": 215,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "REQUEST_HUMAN",
+          "actor": "audit_agent",
+          "event_type": "AUDIT_DECISION_PROPOSED",
+          "node": "material_agent_review",
+          "seq": 217,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "VALIDATE_BOUNDED_PROPOSAL",
+          "actor": "plan_gate",
+          "event_type": "AUDIT_PLAN_GATE_EVALUATED",
+          "node": "audit_plan_gate",
+          "seq": 218,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 226,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "CONFIRM_OWNER",
+          "actor": "human",
+          "event_type": "HUMAN_DECISION_APPLIED",
+          "node": "apply_human_command",
+          "seq": 227,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 230,
+          "task_id": "TASK-SPOUSE-MARRIAGE-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 240,
+          "task_id": null
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 267,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "REQUEST_SUPPLEMENT",
+          "actor": "human",
+          "event_type": "HUMAN_DECISION_APPLIED",
+          "node": "apply_human_command",
+          "seq": 268,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 271,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 281,
+          "task_id": null
+        },
+        {
+          "action": "COMMAND_RESUME",
+          "actor": "workflow",
+          "event_type": "CHECKPOINT_RESUMED",
+          "node": "await_human",
+          "seq": 301,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "MERGE_AND_DIFF_MATERIAL_STATE",
+          "actor": "reconciler",
+          "event_type": "STATE_RECONCILIATION_COMPLETED",
+          "node": "reconcile_state",
+          "seq": 305,
+          "task_id": "TASK-SPOUSE-CONSENT-P02"
+        },
+        {
+          "action": "INVALIDATE_ONLY_IMPACTED_TASKS",
+          "actor": "planner",
+          "event_type": "SELECTIVE_REPLAN_COMPLETED",
+          "node": "selective_replan",
+          "seq": 315,
+          "task_id": null
+        },
+        {
+          "action": "VERIFY_ALL_REQUIRED_MATERIAL_TASKS",
+          "actor": "validator",
+          "event_type": "COMPLETENESS_VALIDATED",
+          "node": "final_validator",
+          "seq": 332,
+          "task_id": null
+        },
+        {
+          "action": "RUN_COMPLETED",
+          "actor": "workflow",
+          "event_type": "RUN_COMPLETED",
+          "node": "final_validator",
+          "seq": 334,
+          "task_id": null
+        }
+      ],
+      "trial_index": 3,
+      "variant": "deterministic/current"
+    }
+  ],
+  "trials_per_case": 3,
+  "variant": "deterministic/current"
+}

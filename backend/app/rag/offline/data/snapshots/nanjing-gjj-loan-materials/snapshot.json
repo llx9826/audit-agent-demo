@@ -1,0 +1,17 @@
+{
+  "byte_count": 70193,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:19:10.740036+00:00",
+  "jurisdiction": "南京",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "南京住房公积金管理中心",
+  "robots_status": "ALLOWED",
+  "sha256": "67dbd70580d1b698c4224c555ca264b413b3143b09582546346f397ca6156e0f",
+  "source_id": "nanjing-gjj-loan-materials",
+  "source_version": "2021-04-28",
+  "status": "ACTIVE",
+  "title": "南京住房公积金贷款办理材料",
+  "url": "https://gjj.nanjing.gov.cn/zcfg/dkl/202104/t20210428_2900135.html"
+}

@@ -1,0 +1,312 @@
+{
+  "case_count": 50,
+  "cases": {
+    "RET-001": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-002": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-003": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-004": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-005": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-006": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-007": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-008": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-009": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-010": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-011": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-012": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-013": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-014": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-015": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-016": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-017": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-018": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-019": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-020": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-021": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-022": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-023": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-024": {
+      "hit_rate@5": 1.0,
+      "mrr": 0.5,
+      "ndcg@5": 0.6309297535714575,
+      "recall@5": 1.0
+    },
+    "RET-025": {
+      "hit_rate@5": 1.0,
+      "mrr": 0.5,
+      "ndcg@5": 0.6309297535714575,
+      "recall@5": 1.0
+    },
+    "RET-026": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-027": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-028": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-029": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-030": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-031": {
+      "hit_rate@5": 1.0,
+      "mrr": 0.5,
+      "ndcg@5": 0.6309297535714575,
+      "recall@5": 1.0
+    },
+    "RET-032": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-033": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-034": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-035": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-036": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-037": {
+      "hit_rate@5": 1.0,
+      "mrr": 0.5,
+      "ndcg@5": 0.6309297535714575,
+      "recall@5": 1.0
+    },
+    "RET-038": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-039": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-040": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-041": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-042": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-043": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-044": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-045": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-046": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-047": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-048": {
+      "hit_rate@5": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg@5": 0.5,
+      "recall@5": 1.0
+    },
+    "RET-049": {
+      "hit_rate@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "recall@5": 1.0
+    },
+    "RET-050": {
+      "hit_rate@5": 1.0,
+      "mrr": 0.25,
+      "ndcg@5": 0.43067655807339306,
+      "recall@5": 1.0
+    }
+  },
+  "dataset": "requirement_retrieval.jsonl",
+  "metrics": {
+    "hit_rate@5": 1.0,
+    "mrr": 0.9316666666666666,
+    "ndcg@5": 0.9490879114471845,
+    "recall@5": 1.0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "byte_count": 106254,
+  "content_type": "text/html",
+  "expected_mime_type": "text/html",
+  "fetched_at": "2026-08-16T14:19:11.908045+00:00",
+  "jurisdiction": "北京",
+  "offline_stage": "SOURCE_SNAPSHOT",
+  "product": "住房公积金个人住房贷款",
+  "publisher": "北京住房公积金管理中心",
+  "robots_status": "UNAVAILABLE",
+  "sha256": "63eea40dee120a210c83730f9873396284f7e62bd03b4cb46c059a516deedba6",
+  "source_id": "beijing-gjj-loan-application",
+  "source_version": "2026-06-08",
+  "status": "ACTIVE",
+  "title": "北京住房公积金个人住房贷款申请操作详解",
+  "url": "https://gjj.beijing.gov.cn/web/zwfw5/386727/386737/386740/11046897/index.html"
+}

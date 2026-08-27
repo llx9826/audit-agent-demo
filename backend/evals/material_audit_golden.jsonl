@@ -1,0 +1,4 @@
+{"id":"AUDIT-OWNER","issue_type":"OWNER_AMBIGUOUS","objective":"确认婚姻证明属于借款人还是配偶","expected_actions":["REQUEST_RECOVERY","REQUEST_HUMAN"],"material_types":["marriage_certificate","marriage_certificate"],"person_ids":["P01","P02"]}
+{"id":"AUDIT-TYPE","issue_type":"TYPE_AMBIGUOUS","objective":"在身份证明与户籍证明候选中确认材料类型；当前没有可区分的 VLM 类型 Observation","expected_action":"REQUEST_RECOVERY","material_types":["identity_document","household_register"],"person_ids":["P01","P01"]}
+{"id":"AUDIT-BUNDLE","issue_type":"BUNDLE_AMBIGUOUS","objective":"确认相邻页面应归为同一材料册还是两个材料；当前没有相邻页 Observation","expected_action":"REQUEST_RECOVERY","material_types":["property_certificate","property_certificate"],"person_ids":["P03","P03"]}
+{"id":"AUDIT-REQUIREMENT","issue_type":"REQUIREMENT_MATCH_AMBIGUOUS","objective":"确认材料应匹配哪一个 Dirty Requirement Task；当前没有 Requirement 区分证据","expected_action":"REQUEST_RECOVERY","material_types":["spouse_consent","spouse_consent"],"person_ids":["P02","P02"]}
